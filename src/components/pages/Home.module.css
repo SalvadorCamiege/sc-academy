@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Handlee&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+.heroSection {
+  background: linear-gradient(90deg, #01133F, #022a7a);
+  color: white;
+  height: 77vh;
+  padding: 5rem;
+  font-family: sans-serif;
+   overflow: hidden;
+}
+
+.heroTop {
+  margin-top: 100px;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.heroTop h1 {
+  font-family: "Handlee", cursive;
+  font-size: 2rem;
+  margin-top: -16px;
+  margin-bottom: 1.5rem;
+}
+
+.imageWrapper {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.imageWrapper::before {
+  content: "";
+  position: absolute;
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, #1e88e5 0%, #1565c0 70%);
+  border-radius: 80%;
+  top: 80px; 
+  z-index: 0;
+}
+
+.imageWrapper::after {
+  content: "";
+  position: absolute;
+  width: 650px;
+  height: 650px;
+  background: radial-gradient(circle, rgba(30,136,229,0.3) 0%, transparent 70%);
+  border-radius: 80%;
+  top: 120px; 
+  z-index: 0;
+}
+
+.imageWrapper img {
+  max-width: 360px;
+  width: 100%;
+  height: auto;
+  position: relative;
+  z-index: 1;
+}
+.imageWrapper img {
+  max-width: 360px;
+  width: 100%;
+  height: auto;
+  position: relative;
+  z-index: 1;
+}
+
+.heroBottom {
+  display: flex;
+  margin-top: -500px !important;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.satisfaction {
+  display: flex;
+  font-family: "Open Sans", sans-serif;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.stars {
+  display: flex;
+  font-family: "Open Sans", sans-serif;
+  gap: 0.25rem;
+  margin-top: 0.5rem;
+}
+
+.star {
+  color: white;
+  font-size: 1.5rem;
+}
+
+.heroText {
+  max-width: 500px;
+  font-family: "Open Sans", sans-serif;
+  text-align: left;
+}
+
+.heroText p {
+  font-size: 1.3rem;
+  font-family: "Open Sans", sans-serif;
+}

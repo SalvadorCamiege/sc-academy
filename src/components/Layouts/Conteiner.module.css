@@ -1,0 +1,11 @@
+.Conteiner {
+    width: 1800px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+.minHeight {
+    min-height: 100vh;
+}

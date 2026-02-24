@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+.NavBar {
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(90deg, #01133F, #022a7a);
+    height: 65px;
+    padding: 1em 0;
+    position: fixed;
+    top: 320;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+}
+
+.NavBar > div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.logo img {
+    height: 100px;
+    font-family: "Open Sans", sans-serif;
+    width: 100%;
+}
+
+.list {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    text-align: center;
+    margin-left: 68px !important;
+    font-size: 17px;
+    font-family: "Open Sans", sans-serif;
+    font-weight: bold;
+    gap: 4rem; 
+    margin: 0;
+    padding: 0;
+}
+
+.item a {
+    position: relative;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.item a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 0%;
+    height: 2px;
+    background-color: #02C8F0;
+    transition: width 0.3s ease;
+}
+
+.item a:hover::after {
+    width: 100%;
+}
+
+.whatsapp {
+    display: flex;                
+    align-items: center;           
+    gap: 0.5rem;                   
+    background-color: #22c55e;     
+    color: white;       
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;         
+    padding: 0.5rem 1rem;          
+    border-radius: 9999px;         
+    text-decoration: none;         
+    transition: all 0.3s ease; 
+}
+
+.whatsapp img:hover {
+    transform: scale(1.1);
+}
