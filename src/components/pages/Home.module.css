@@ -8,7 +8,7 @@
   height: 77vh;
   padding: 5rem;
   font-family: sans-serif;
-   overflow: hidden;
+  overflow: hidden;
 }
 
 .heroTop {
@@ -19,7 +19,7 @@
 
 .heroTop h1 {
   font-family: "Handlee", cursive;
-  font-size: 2rem;
+  font-size: 35px;
   margin-top: -16px;
   margin-bottom: 1.5rem;
 }
@@ -83,16 +83,34 @@
   align-items: flex-start;
 }
 
+.satisfaction p{
+   font-family: "Open Sans", sans-serif;
+   font-size: 20px;
+}
+
 .stars {
   display: flex;
-  font-family: "Open Sans", sans-serif;
   gap: 0.25rem;
+  font-family: "Open Sans", sans-serif;
   margin-top: 0.5rem;
+  position: relative;
+  z-index: 3; 
+}
+
+.stars {
+  display: flex;
+  gap: 0.25rem;
+  font-family: "Open Sans", sans-serif;
+  margin-top: 0.5rem;
+  position: relative;
+  z-index: 3;
 }
 
 .star {
-  color: white;
+  color: #ccc;
   font-size: 1.5rem;
+  font-family: "Open Sans", sans-serif;
+  cursor: pointer;
 }
 
 .heroText {
@@ -102,6 +120,501 @@
 }
 
 .heroText p {
-  font-size: 1.3rem;
+  font-size: 20px;
+  color: white;
+  font-weight: bold;
   font-family: "Open Sans", sans-serif;
+}
+
+.satisfaction p{
+  font-size: 20px;
+  color: white;
+  font-weight: bold;
+  font-family: "Open Sans", sans-serif;
+}
+
+/* segundo home */
+.start1 {
+  padding: 90px 80px;
+  background: linear-gradient(90deg, #01133F, #022a7a);
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+.statsparagrafo h1 {
+  font-size: 35px;
+  font-family: "Handlee", cursive;
+  color: white;
+  margin-bottom: 15px;
+}
+
+.statsparagrafo p {
+  max-width: 900px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 20px;
+  margin: 0 auto;
+  color: white !important;
+  line-height: 1.6;
+}
+
+.statsparagrafo-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  margin-top: 40px;
+}
+
+.card {
+  cursor: pointer;
+  padding: 20px;
+  border-radius: 12px;
+  display: flex;       
+  align-items: center;
+  gap: 15px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+}
+
+.icon {
+  font-size: 40px;
+  color: #1e88e5;
+}
+
+.card h2 {
+  margin: 0;
+  font-size: 20px;
+  font-family: "Open Sans", sans-serif;
+  color: white;
+}
+
+.card p {
+  margin: 0;
+  font-size: 20px;
+  font-family: "Open Sans", sans-serif;
+  color: white;
+  text-align: left;
+}
+/* fim da segunda parte */
+
+/* Terceira parte */
+.coursessection {
+  background: linear-gradient(90deg, #01133F, #022a7a);
+  color: white;
+  padding: 4rem 1.5rem;
+  position: relative;
+  clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+}
+
+.coursesheader h1 {
+  font-size: 35px;
+  font-family: "Handlee", cursive;
+  color: white;
+  font-weight: bold;
+  margin-top: -40px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.coursesheader p {
+  font-size: 20px;
+  font-family: "Open Sans", sans-serif;
+  color: white;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.courseImg {
+  width: 100%;        
+  height: 150px;        
+  object-fit: cover;    
+  border-radius: 0.5rem; 
+  margin-bottom: 1rem; 
+  box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+  transition: transform 0.3s, box-shadow 0.3s;
+  cursor: pointer;
+}
+
+.courseImg:hover {
+  transform: scale(1.05); 
+  box-shadow: 0 8px 12px rgba(0,0,0,0.3);
+}
+
+.coursesgrid {
+  display: flex;          
+  justify-content: space-between;
+  align-items: stretch;    
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+  gap: 1rem;               
+}
+
+.coursecard {
+  flex: 1 1 23%;         
+  padding: 1.5rem;
+  border-radius: 1rem;
+  color: white;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transition: transform 0.2s;
+}
+
+.course-card:hover {
+  transform: scale(1.05);
+}
+
+.coursecard h2 {
+  font-size: 20px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  color: white;
+}
+
+.coursecard p {
+  font-size: 15px;
+  font-family: "Open Sans", sans-serif;
+  color: white;
+}
+
+.moreinfo{
+  text-align: center;
+  margin: 20px;
+}
+
+.btnvermais {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 10px  10px;
+  background-color: #1e88e5; 
+  color: white;
+  font-weight: bold;
+  font-family: "Open Sans", sans-serif;
+  width: 10%;
+  margin: auto;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  margin-bottom: 30px;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.btnvermais:hover {
+  background-color: #3730a3; 
+  transform: scale(1.05); 
+}
+
+.testemunhossection h1{
+    text-align: center;
+    color:  #02184B;
+    margin-top: 20px;
+    font-size: 35px;
+    font-family: "Handlee", cursive;
+    font-weight: bold;
+}
+
+.testemunhossection h3{
+    text-align: center;
+    color:  #1669C3;
+    margin-top: -50px;
+    font-family: "Open Sans", sans-serif;
+    font-weight: bold;
+}
+
+.testemunhossection {
+  text-align: center;
+  padding: 80px 0;
+}
+
+.sliderContainer {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 320px;
+  overflow: hidden;
+}
+
+.slide {
+  position: absolute;
+  width: 300px;
+  transition: all 0.5s ease;
+  opacity: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.cardTestemunho {
+  background: linear-gradient(90deg, #01133F, #022a7a);
+  color: white;
+  padding: 20px;
+  cursor: pointer;
+  border-radius: 16px;
+  text-align: left;
+  width: 100%;
+  height: 170px;
+}
+
+.cardTestemunho h3{
+  color: white;
+  font-family: "Handlee", cursive;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.cardTestemunho h4{
+  color: white;
+  font-family: "Handlee", cursive;
+  text-align: center;
+}
+
+.cardTestemunho p{
+  color: white;
+  font-family: "Open Sans", sans-serif;
+  text-align: center;
+  font-size: 14px;
+}
+
+.activeSlide {
+  opacity: 1;
+  transform: translateX(0) scale(1);
+  z-index: 3;
+}
+
+.prevSlide {
+  transform: translateX(-380px) scale(0.8);
+  opacity: 0.5;
+  z-index: 2;
+}
+
+.nextSlide {
+  transform: translateX(380px) scale(0.8);
+  opacity: 0.5;
+  z-index: 2;
+}
+
+.buttons {
+  margin-top: 10px;
+}
+
+.buttons button {
+  background: #1669C3;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  margin: 0 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+/* Parte do contato */
+.contactcontainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+  margin-top: -70px !important;
+}
+
+.contactcard {
+  position: relative;
+  width: 100%;
+  max-width: 1100px;
+  min-height: 600px;
+  border-radius: 40px;
+  overflow: hidden;
+  display: flex;
+  background: linear-gradient(to right, rgba(11, 23, 61, 0.95), rgba(11, 23, 61, 0.4)), url('../../assets/img/contato.jpg');
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+}
+
+.contactinfo {
+  flex: 1;
+  padding: 60px;
+  color: white;
+  z-index: 2;
+}
+
+.title {
+  font-size: 35px;
+  font-weight: bold;
+  color: white;
+  font-family: "Handlee", cursive;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+.description {
+  color: white;
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.6;
+  margin-bottom: 30px;
+  max-width: 450px;
+}
+
+.subtitle {
+  font-size: 15px;
+  font-family: "Open Sans", sans-serif;
+  margin-bottom: 25px;
+  color: white;
+}
+
+.channelitem {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  background: rgba(30, 58, 138, 0.3);
+  padding: 15px;
+  border-radius: 15px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  margin-bottom: 15px;
+  width: fit-content;
+  min-width: 280px;
+}
+
+.iconbox {
+  background: #2563eb;
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  flex-shrink: 0;
+}
+
+.texts span {
+  display: block;
+  font-size: 15px;
+  font-family: "Open Sans", sans-serif;
+  color: white;
+}
+
+.texts strong {
+  font-size: 1rem;
+  font-family: "Open Sans", sans-serif;
+}
+
+/* Lado Direito - Formulário Glass */
+.contactformwrapper {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+  z-index: 2;
+}
+
+.glassform {
+  width: 100%;
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  padding: 40px;
+  border-radius: 30px;
+}
+
+.inputgroup {
+  margin-bottom: 20px;
+  font-family: "Open Sans", sans-serif;
+  width: 90%;
+}
+
+.inputgroup label {
+  display: block;
+  color: white;
+  font-size: 0.85rem;
+  margin-bottom: 8px;
+  margin-left: 5px;
+}
+
+.inputgroup input, 
+.inputgroup textarea {
+  width: 100%;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  padding: 12px 15px;
+  color: white;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+.inputgroup input:focus, 
+.inputgroup textarea:focus {
+  background: rgba(255, 255, 255, 0.15);
+  border-color: #2563eb;
+}
+
+.row {
+  display: flex;
+  gap: 15px;
+}
+
+.telcontainer {
+  display: flex;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.prefix {
+  padding: 0 12px;
+  color: #d1d5db;
+  font-size: 0.9rem;
+  border-right: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.telcontainer input {
+  background: transparent !important;
+  border: none !important;
+}
+
+.btnsend {
+  width: 100%;
+  padding: 16px;
+  border: none;
+  border-radius: 12px;
+  background: linear-gradient(to right, #1e3a8a, #2563eb);
+  color: white;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: transform 0.2s, opacity 0.2s;
+  margin-top: 10px;
+}
+
+.btnsend:hover {
+  opacity: 0.9;
+}
+
+.btnsend:active {
+  transform: scale(0.98);
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 950px) {
+  .contactcard {
+    flex-direction: column;
+    min-height: auto;
+    border-radius: 20px;
+  }
+  .contactinfo, .contactformwrapper {
+    padding: 30px;
+  }
+  .row {
+    flex-direction: column;
+  }
 }

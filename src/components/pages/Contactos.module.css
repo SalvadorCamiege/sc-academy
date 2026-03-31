@@ -1,0 +1,187 @@
+.contactcontainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.contactcard {
+  position: relative;
+  width: 100%;
+  max-width: 1100px;
+  min-height: 600px;
+  border-radius: 40px;
+  overflow: hidden;
+  display: flex;
+  background: linear-gradient(to right, rgba(11, 23, 61, 0.95), rgba(11, 23, 61, 0.4)), url('../../assets/img/contato.jpg');
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+  margin-top: 160px;
+  margin-bottom: 80px;
+}
+
+.contactinfo {
+  flex: 1;
+  padding: 60px;
+  color: white;
+  z-index: 2;
+}
+
+.title {
+  font-size: 35px;
+  font-weight: bold;
+  color: white;
+  font-family: "Handlee", cursive;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+.description {
+  color: white;
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.6;
+  margin-bottom: 30px;
+  max-width: 450px;
+}
+
+.subtitle {
+  font-size: 15px;
+  font-family: "Open Sans", sans-serif;
+  margin-bottom: 25px;
+  color: white;
+}
+
+.channelitem {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  background: rgba(30, 58, 138, 0.3);
+  padding: 15px;
+  border-radius: 15px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  margin-bottom: 15px;
+  width: fit-content;
+  min-width: 280px;
+}
+
+.iconbox {
+  background: #2563eb;
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  flex-shrink: 0;
+}
+
+.texts span {
+  display: block;
+  font-size: 15px;
+  font-family: "Open Sans", sans-serif;
+  color: white;
+}
+
+.texts strong {
+  font-size: 1rem;
+  font-family: "Open Sans", sans-serif;
+}
+
+/* Lado Direito - Formulário Glass */
+.contactformwrapper {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+  z-index: 2;
+}
+
+.glassform {
+  width: 100%;
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  padding: 40px;
+  border-radius: 30px;
+}
+
+.inputgroup {
+  margin-bottom: 20px;
+  font-family: "Open Sans", sans-serif;
+  width: 90%;
+}
+
+.inputgroup label {
+  display: block;
+  color: white;
+  font-size: 0.85rem;
+  margin-bottom: 8px;
+  margin-left: 5px;
+}
+
+.inputgroup input, 
+.inputgroup textarea {
+  width: 100%;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  padding: 12px 15px;
+  color: white;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+.inputgroup input:focus, 
+.inputgroup textarea:focus {
+  background: rgba(255, 255, 255, 0.15);
+  border-color: #2563eb;
+}
+
+.row {
+  display: flex;
+  gap: 15px;
+}
+
+.telcontainer {
+  display: flex;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.prefix {
+  padding: 0 12px;
+  color: #d1d5db;
+  font-size: 0.9rem;
+  border-right: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.telcontainer input {
+  background: transparent !important;
+  border: none !important;
+}
+
+.btnsend {
+  width: 100%;
+  padding: 16px;
+  border: none;
+  border-radius: 12px;
+  background: linear-gradient(to right, #1e3a8a, #2563eb);
+  color: white;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: transform 0.2s, opacity 0.2s;
+  margin-top: 10px;
+}
+
+.btnsend:hover {
+  opacity: 0.9;
+}
+
+.btnsend:active {
+  transform: scale(0.98);
+}
