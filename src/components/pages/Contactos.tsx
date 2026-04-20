@@ -5,16 +5,26 @@ const Contactos = () => {
   const [formData, setFormData] = useState({
     nome: "",
     email: "",
-    mensagem: ""
+    mensagem: "",
+    telefone: "",
+    curso: "",
+    nivel: "",
+    escola: ""
   });
 
   const [errors, setErrors] = useState({
     nome: "",
     email: "",
-    mensagem: ""
+    mensagem: "",
+    telefone: "",
+    curso: "",
+    nivel: "",
+    escola: ""
   });
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+  const handleChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>
+  ) => {
     const { name, value } = e.target;
 
     setFormData((prev) => ({
@@ -25,7 +35,16 @@ const Contactos = () => {
 
   const validate = () => {
     let valid = true;
-    let newErrors = { nome: "", email: "", mensagem: "" };
+
+    let newErrors = {
+      nome: "",
+      email: "",
+      mensagem: "",
+      telefone: "",
+      curso: "",
+      nivel: "",
+      escola: ""
+    };
 
     if (!formData.nome.trim()) {
       newErrors.nome = "Nome é obrigatório";
@@ -37,6 +56,26 @@ const Contactos = () => {
       valid = false;
     } else if (!/\S+@\S+\.\S+/.test(formData.email)) {
       newErrors.email = "Email inválido";
+      valid = false;
+    }
+
+    if (!formData.telefone.trim()) {
+      newErrors.telefone = "Telefone é obrigatório";
+      valid = false;
+    }
+
+    if (!formData.curso.trim()) {
+      newErrors.curso = "Selecione um curso";
+      valid = false;
+    }
+
+    if (!formData.nivel.trim()) {
+      newErrors.nivel = "Selecione o nível";
+      valid = false;
+    }
+
+    if (!formData.escola.trim()) {
+      newErrors.escola = "Escola é obrigatória";
       valid = false;
     }
 
@@ -58,13 +97,21 @@ const Contactos = () => {
       setFormData({
         nome: "",
         email: "",
-        mensagem: ""
+        mensagem: "",
+        telefone: "",
+        curso: "",
+        nivel: "",
+        escola: ""
       });
 
       setErrors({
         nome: "",
         email: "",
-        mensagem: ""
+        mensagem: "",
+        telefone: "",
+        curso: "",
+        nivel: "",
+        escola: ""
       });
     }
   };
@@ -126,6 +173,7 @@ const Contactos = () => {
               {errors.nome && <span className={styles.error}>{errors.nome}</span>}
             </div>
 
+            {/* Email */}
             <div className={styles.inputgroup}>
               <label>E-mail</label>
               <input
@@ -136,6 +184,60 @@ const Contactos = () => {
                 onChange={handleChange}
               />
               {errors.email && <span className={styles.error}>{errors.email}</span>}
+            </div>
+
+            <div className={styles.inputgroup}>
+              <label>Telefone / WhatsApp</label>
+              <input
+                type="text"
+                name="telefone"
+                placeholder="Insira seu número"
+                value={formData.telefone}
+                onChange={handleChange}
+              />
+              {errors.telefone && <span className={styles.error}>{errors.telefone}</span>}
+            </div>
+
+            <div className={styles.inputgroup}>
+              <label>Curso</label>
+              <select
+                name="curso"
+                value={formData.curso}
+                onChange={handleChange}
+              >
+                <option value="">Selecione o curso</option>
+                <option value="html">HTML & CSS</option>
+                <option value="js">JavaScript</option>
+                <option value="react">React</option>
+              </select>
+              {errors.curso && <span className={styles.error}>{errors.curso}</span>}
+            </div>
+
+            <div className={styles.inputgroup}>
+              <label>Nível</label>
+              <select
+                name="nivel"
+                value={formData.nivel}
+                onChange={handleChange}
+              >
+                <option value="">Selecione o nível</option>
+                <option value="iniciante">Iniciante</option>
+                <option value="basico">Básico</option>
+                <option value="avancado">Avançado</option>
+              </select>
+              {errors.nivel && <span className={styles.error}>{errors.nivel}</span>}
+            </div>
+
+            <div className={styles.inputgroup}>
+              <label>Escola</label>
+              <input
+                type="text"
+                name="escola"
+                placeholder="Nome da sua escola"
+                value={formData.escola}
+                onChange={handleChange}
+              />
+              {errors.escola && <span className={styles.error}>{errors.escola}</span>}
             </div>
 
             <div className={styles.inputgroup}>
@@ -162,4 +264,4 @@ const Contactos = () => {
   );
 };
 
-export default Contactos;
+export default Contactos; 

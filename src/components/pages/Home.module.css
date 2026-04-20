@@ -6,9 +6,13 @@
   background: linear-gradient(90deg, #01133F, #022a7a);
   color: white;
   height: 77vh;
-  padding: 5rem;
+  padding: 4.8rem;
   font-family: sans-serif;
   overflow: hidden;
+}
+
+.break800 {
+  display: none;
 }
 
 .heroTop {
@@ -22,6 +26,7 @@
   font-size: 35px;
   margin-top: -16px;
   margin-bottom: 1.5rem;
+  color: white !important;
 }
 
 .imageWrapper {
@@ -132,7 +137,6 @@
   font-weight: bold;
   font-family: "Open Sans", sans-serif;
 }
-
 /* segundo home */
 .start1 {
   padding: 90px 80px;
@@ -200,12 +204,12 @@
   text-align: left;
 }
 /* fim da segunda parte */
-
 /* Terceira parte */
 .coursessection {
   background: linear-gradient(90deg, #01133F, #022a7a);
   color: white;
   padding: 4rem 1.5rem;
+  border: none;
   position: relative;
   clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
 }
@@ -213,9 +217,9 @@
 .coursesheader h1 {
   font-size: 35px;
   font-family: "Handlee", cursive;
-  color: white;
+  border-top: none;
   font-weight: bold;
-  margin-top: -40px;
+  margin-top: -70px;
   margin-bottom: 30px;
   text-align: center;
 }
@@ -302,15 +306,17 @@
   border: none;
   border-radius: 0.5rem;
   cursor: pointer;
+  text-decoration: none;
   margin-bottom: 30px;
   transition: background-color 0.3s, transform 0.2s;
 }
 
 .btnvermais:hover {
-  background-color: #3730a3; 
+  background-color: #0b173d; 
   transform: scale(1.05); 
 }
-
+/* fim da terceira parte */
+/* Inicio  da Quarta parte */
 .testemunhossection h1{
     text-align: center;
     color:  #02184B;
@@ -415,7 +421,6 @@
   cursor: pointer;
   font-size: 18px;
 }
-
 /* Parte do contato */
 .contactcontainer {
   display: flex;
@@ -424,6 +429,7 @@
   min-height: 100vh;
   padding: 20px;
   margin-top: -70px !important;
+  margin-bottom: 80px !important;
 }
 
 .contactcard {
@@ -503,7 +509,6 @@
   font-size: 1rem;
   font-family: "Open Sans", sans-serif;
 }
-
 /* Lado Direito - Formulário Glass */
 .contactformwrapper {
   flex: 1;
@@ -604,17 +609,4280 @@
   transform: scale(0.98);
 }
 
-/* Mobile Responsiveness */
-@media (max-width: 950px) {
-  .contactcard {
+.inputgroup select {
+  width: 110%;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  padding: 12px 15px;
+  color: white;
+  outline: none;
+  transition: all 0.3s ease;
+  font-family: "Open Sans", sans-serif;
+}
+
+.inputgroup select option {
+  color: black;
+}
+
+.inputgroup select:focus {
+  background: rgba(255, 255, 255, 0.15);
+  border-color: #2563eb;
+}
+
+
+@media (max-width: 1300px) and (min-width: 1200px) {
+   .heroSection {
+      background: linear-gradient(90deg, #01133F, #022a7a);
+      color: white;
+      height: 77vh;
+      padding: 4.8rem;
+      font-family: sans-serif;
+      overflow: hidden;
+    } 
+    /* Segunda parte Home */
+    .start1 {
+      padding: 90px 80px;
+      background: linear-gradient(90deg, #01133F, #022a7a);
+      text-align: center;
+      font-family: Arial, sans-serif;
+    }
+
+    .statsparagrafo h1 {
+      font-size: 35px;
+      font-family: "Handlee", cursive;
+      color: white;
+      margin-bottom: 15px;
+    }
+
+    .statsparagrafo p {
+      max-width: 900px;
+      font-family: "Open Sans", sans-serif;
+      font-size: 20px;
+      margin: 0 auto;
+      color: white !important;
+      line-height: 1.6;
+    }
+
+    .statsparagrafo-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+      margin-top: 40px;
+    }
+
+    .card {
+      cursor: pointer;
+      padding: 20px;
+      border-radius: 12px;
+      display: flex;       
+      align-items: center;
+      gap: 15px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+    }
+
+    .icon {
+      font-size: 40px;
+      color: #1e88e5;
+    }
+
+    .card h2 {
+      margin: 0;
+      font-size: 20px;
+      font-family: "Open Sans", sans-serif;
+      color: white;
+    }
+
+    .card p {
+      margin: 0;
+      font-size: 20px;
+      font-family: "Open Sans", sans-serif;
+      color: white;
+      text-align: left;
+    }
+    /* fim da segunda parte */
+}
+
+@media (max-width: 1200px) and (min-width: 1100px) {
+   .heroSection {
+      background: linear-gradient(90deg, #01133F, #022a7a);
+      color: white;
+      height: 77vh;
+      padding: 4.8rem;
+      font-family: sans-serif;
+      overflow: hidden;
+    } 
+
+    /* segundo home */
+    .start1 {
+      padding: 90px 80px;
+      background: linear-gradient(90deg, #01133F, #022a7a);
+      text-align: center;
+      border-top: none;
+      font-family: Arial, sans-serif;
+    }
+
+    .statsparagrafo h1 {
+      font-size: 35px;
+      font-family: "Handlee", cursive;
+      color: white;
+      margin-bottom: 15px;
+    }
+
+    .statsparagrafo p {
+      max-width: 900px;
+      font-family: "Open Sans", sans-serif;
+      font-size: 20px;
+      margin: 0 auto;
+      color: white !important;
+      line-height: 1.6;
+    }
+
+    .statsparagrafo-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+      margin-top: 40px;
+    }
+
+    .card {
+      cursor: pointer;
+      padding: 20px;
+      border-radius: 12px;
+      display: flex;       
+      align-items: center;
+      gap: 15px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+    }
+
+    .icon {
+      font-size: 40px;
+      color: #1e88e5;
+    }
+
+    .card h2 {
+      margin: 0;
+      font-size: 20px;
+      font-family: "Open Sans", sans-serif;
+      color: white;
+    }
+
+    .card p {
+      margin: 0;
+      font-size: 20px;
+      font-family: "Open Sans", sans-serif;
+      color: white;
+      text-align: left;
+    }
+    /* fim da segunda parte */
+    /*Terceira parte*/
+    .coursesheader h1 {
+      font-size: 35px;
+      font-family: "Handlee", cursive;
+      color: white;
+      font-weight: bold;
+      margin-top: -70px;
+      margin-bottom: 30px;
+      text-align: center;
+    }
+    .coursecard h2 {
+      font-size: 20px;
+      font-family: "Open Sans", sans-serif;
+      font-weight: bold;
+      margin-bottom: 0.5rem;
+      color: white;
+    }
+
+    .coursecard p {
+      font-size: 13px;
+      font-family: "Open Sans", sans-serif;
+      color: white;
+    }
+}
+
+@media (max-width: 1100px) and (min-width: 1000px) {
+   .heroSection {
+      background: linear-gradient(90deg, #01133F, #022a7a);
+      color: white;
+      border-bottom: none;
+      height: 77vh;
+      padding: 4.8rem;
+      font-family: sans-serif;
+      overflow: hidden;
+    } 
+    
+    .heroTop h1 {
+      font-family: "Handlee", cursive;
+      font-size: 30px;
+      margin-top: -16px;
+      margin-bottom: 1.5rem;
+    }
+
+    .heroText p {
+      font-size: 18px;
+      color: white;
+      font-weight: bold;
+      font-family: "Open Sans", sans-serif;
+    }
+
+    .satisfaction p{
+      font-size: 18px;
+      color: white;
+      font-weight: bold;
+      font-family: "Open Sans", sans-serif;
+    }
+
+     /* segundo home */
+    .start1 {
+      padding: 90px 80px;
+      background: linear-gradient(90deg, #01133F, #022a7a);
+      text-align: center;
+      border-top: none;
+      font-family: Arial, sans-serif;
+    }
+
+    .statsparagrafo h1 {
+      font-size: 30px;
+      font-family: "Handlee", cursive;
+      color: white;
+      margin-bottom: 15px;
+    }
+
+    .statsparagrafo p {
+      max-width: 900px;
+      font-family: "Open Sans", sans-serif;
+      font-size: 18px;
+      margin: 0 auto;
+      color: white !important;
+      line-height: 1.6;
+    }
+
+    .statsparagrafo-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+      margin-top: 40px;
+    }
+
+    .card {
+      cursor: pointer;
+      padding: 20px;
+      border-radius: 12px;
+      display: flex;       
+      align-items: center;
+      gap: 15px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+    }
+
+    .icon {
+      font-size: 35px;
+      color: #1e88e5;
+    }
+
+    .card h2 {
+      margin: 0;
+      font-size: 18px;
+      font-family: "Open Sans", sans-serif;
+      color: white;
+    }
+
+    .card p {
+      margin: 0;
+      font-size: 18px;
+      font-family: "Open Sans", sans-serif;
+      color: white;
+      text-align: left;
+    }
+    /* fim da segunda parte */
+     /*Terceira parte*/
+    .coursesheader h1 {
+      font-size: 30px;
+      font-family: "Handlee", cursive;
+      color: white;
+      font-weight: bold;
+      margin-top: -70px;
+      margin-bottom: 30px;
+      text-align: center;
+    }
+    .coursecard h2 {
+      font-size: 15px;
+      font-family: "Open Sans", sans-serif;
+      font-weight: bold;
+      margin-bottom: 0.5rem;
+      color: white;
+    }
+
+    .coursecard p {
+      font-size: 11px;
+      font-family: "Open Sans", sans-serif;
+      color: white;
+    }
+    /* fim  da Terceira parte */
+
+    /* Inicio  da Quarta parte */
+    .testemunhossection h1{
+        text-align: center;
+        color:  #02184B;
+        margin-top: 20px;
+        font-size: 30px;
+        font-family: "Handlee", cursive;
+        font-weight: bold;
+    }
+
+    .testemunhossection h3{
+        text-align: center;
+        color:  #1669C3;
+        margin-top: -50px;
+        font-family: "Open Sans", sans-serif;
+        font-weight: bold;
+    }
+
+    .testemunhossection {
+      text-align: center;
+      padding: 100px 0;
+    }
+
+    .sliderContainer {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 320px;
+      overflow: hidden;
+    }
+
+    .slide {
+      position: absolute;
+      width: 250px;
+      transition: all 0.5s ease;
+      opacity: 0;
+      display: flex;
+      justify-content: center;
+    }
+
+    .cardTestemunho {
+      background: linear-gradient(90deg, #01133F, #022a7a);
+      color: white;
+      padding: 30px;
+      cursor: pointer;
+      border-radius: 16px;
+      text-align: left;
+      width: 100%;
+      height: 170px;
+    }
+
+    .cardTestemunho h3{
+      color: white;
+      font-family: "Handlee", cursive;
+      margin-top: 20px;
+      margin-bottom: 10px;
+      text-align: center;
+    }
+
+    .cardTestemunho h4{
+      color: white;
+      font-family: "Handlee", cursive;
+      text-align: center;
+    }
+
+    .cardTestemunho p{
+      color: white;
+      font-family: "Open Sans", sans-serif;
+      text-align: center;
+      font-size: 14px;
+    }
+
+    .activeSlide {
+      opacity: 1;
+      transform: translateX(0) scale(1);
+      z-index: 3;
+    }
+
+    .prevSlide {
+      transform: translateX(-320px) scale(0.8);
+      opacity: 0.5;
+      z-index: 2;
+    }
+
+    .nextSlide {
+      transform: translateX(280px) scale(0.8);
+      opacity: 0.5;
+      z-index: 2;
+    }
+
+    .buttons {
+      margin-top: 10px;
+    }
+
+    .buttons button {
+      background: #1669C3;
+      color: white;
+      border: none;
+      padding: 10px 15px;
+      margin: 0 10px;
+      border-radius: 50%;
+      cursor: pointer;
+      font-size: 18px;
+    }
+}
+
+@media (max-width: 1000px) and (min-width: 900px) {
+   .heroSection {
+      background: linear-gradient(90deg, #01133F, #022a7a);
+      color: white;
+      height: 77vh;
+      padding: 4.8rem;
+      font-family: sans-serif;
+      overflow: hidden;
+    } 
+
+  .heroTop {
+    margin-top: 100px;
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+
+  .heroTop h1 {
+    font-family: "Handlee", cursive;
+    font-size: 30px;
+    margin-top: -16px;
+    margin-bottom: 1.5rem;
+  }
+
+  .imageWrapper {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .imageWrapper::before {
+    content: "";
+    position: absolute;
+    width: 600px;
+    height: 600px;
+    background: radial-gradient(circle, #1e88e5 0%, #1565c0 70%);
+    border-radius: 80%;
+    top: 80px; 
+    z-index: 0;
+  }
+
+  .imageWrapper::after {
+    content: "";
+    position: absolute;
+    width: 650px;
+    height: 650px;
+    background: radial-gradient(circle, rgba(30,136,229,0.3) 0%, transparent 70%);
+    border-radius: 80%;
+    top: 120px; 
+    z-index: 0;
+  }
+
+  .imageWrapper img {
+    max-width: 360px;
+    width: 100%;
+    height: auto;
+    position: relative;
+    z-index: 1;
+  }
+  .imageWrapper img {
+    max-width: 360px;
+    width: 100%;
+    height: auto;
+    position: relative;
+    z-index: 1;
+  }
+
+  .heroBottom {
+    display: flex;
+    margin-top: -500px !important;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .satisfaction {
+    display: flex;
+    font-family: "Open Sans", sans-serif;
     flex-direction: column;
-    min-height: auto;
-    border-radius: 20px;
+    align-items: flex-start;
   }
-  .contactinfo, .contactformwrapper {
-    padding: 30px;
+
+  .satisfaction p{
+    font-family: "Open Sans", sans-serif;
+    font-size: 20px;
   }
-  .row {
+
+  .stars {
+    display: flex;
+    gap: 0.25rem;
+    font-family: "Open Sans", sans-serif;
+    margin-top: 0.5rem;
+    position: relative;
+    z-index: 3; 
+  }
+
+  .stars {
+    display: flex;
+    gap: 0.25rem;
+    font-family: "Open Sans", sans-serif;
+    margin-top: 0.5rem;
+    position: relative;
+    z-index: 3;
+  }
+
+  .star {
+    color: #ccc;
+    font-size: 1.5rem;
+    font-family: "Open Sans", sans-serif;
+    cursor: pointer;
+  }
+
+  .heroText {
+    max-width: 500px;
+    font-family: "Open Sans", sans-serif;
+    text-align: left;
+  }
+
+  .heroText p {
+    font-size: 15px;
+    color: white;
+    font-weight: bold;
+    font-family: "Open Sans", sans-serif;
+  }
+
+  .satisfaction p{
+    font-size: 15px;
+    color: white;
+    font-weight: bold;
+    font-family: "Open Sans", sans-serif;
+  }
+
+   /* segundo home */
+    .start1 {
+      padding: 90px 80px;
+      background: linear-gradient(90deg, #01133F, #022a7a);
+      text-align: center;
+      border-top: none;
+      font-family: Arial, sans-serif;
+    }
+
+    .statsparagrafo h1 {
+      font-size: 30px;
+      font-family: "Handlee", cursive;
+      color: white;
+      margin-bottom: 15px;
+    }
+
+    .statsparagrafo p {
+      max-width: 900px;
+      font-family: "Open Sans", sans-serif;
+      font-size: 18px;
+      margin: 0 auto;
+      color: white !important;
+      line-height: 1.6;
+    }
+
+    .statsparagrafo-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+      margin-top: 40px;
+    }
+
+    .card {
+      cursor: pointer;
+      padding: 20px;
+      border-radius: 12px;
+      display: flex;       
+      align-items: center;
+      gap: 15px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+    }
+
+    .icon {
+      font-size: 35px;
+      color: #1e88e5;
+    }
+
+    .card h2 {
+      margin: 0;
+      font-size: 18px;
+      font-family: "Open Sans", sans-serif;
+      color: white;
+    }
+
+    .card p {
+      margin: 0;
+      font-size: 18px;
+      font-family: "Open Sans", sans-serif;
+      color: white;
+      text-align: left;
+    }
+    /* fim da segunda parte */
+    /*Terceira parte*/
+    .coursesheader h1 {
+      font-size: 30px;
+      font-family: "Handlee", cursive;
+      color: white;
+      font-weight: bold;
+      margin-top: -60px;
+      margin-bottom: 30px;
+      text-align: center;
+    }
+
+    .coursesgrid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1rem;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 1rem;
+    }
+    
+    .coursecard h2 {
+      font-size: 15px;
+      font-family: "Open Sans", sans-serif;
+      font-weight: bold;
+      margin-bottom: 0.5rem;
+      color: white;
+    }
+
+    .coursecard p {
+      font-size: 14px;
+      font-family: "Open Sans", sans-serif;
+      color: white;
+    }
+    /* Fim da Terceira parte */
+     /* Inicio  da Quarta parte */
+    .testemunhossection h1{
+        text-align: center;
+        color:  #02184B;
+        margin-top: 15px;
+        font-size: 30px;
+        font-family: "Handlee", cursive;
+        font-weight: bold;
+    }
+
+    .testemunhossection h3{
+        text-align: center;
+        color:  #1669C3;
+        margin-top: -70px;
+        font-family: "Open Sans", sans-serif;
+        font-weight: bold;
+    }
+
+    .testemunhossection {
+      text-align: center;
+      padding: 100px 0;
+    }
+
+    .sliderContainer {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 320px;
+      overflow: hidden;
+    }
+
+    .slide {
+      position: absolute;
+      width: 250px;
+      transition: all 0.5s ease;
+      opacity: 0;
+      display: flex;
+      justify-content: center;
+    }
+
+    .cardTestemunho {
+      background: linear-gradient(90deg, #01133F, #022a7a);
+      color: white;
+      padding: 30px;
+      cursor: pointer;
+      border-radius: 16px;
+      text-align: left;
+      width: 100%;
+      height: 170px;
+    }
+
+    .cardTestemunho h3{
+      color: white;
+      font-family: "Handlee", cursive;
+      margin-top: 20px;
+      margin-bottom: 10px;
+      text-align: center;
+    }
+
+    .cardTestemunho h4{
+      color: white;
+      font-family: "Handlee", cursive;
+      text-align: center;
+    }
+
+    .cardTestemunho p{
+      color: white;
+      font-family: "Open Sans", sans-serif;
+      text-align: center;
+      font-size: 14px;
+    }
+
+    .activeSlide {
+      opacity: 1;
+      transform: translateX(0) scale(1);
+      z-index: 3;
+    }
+
+    .prevSlide {
+      transform: translateX(-300px) scale(0.8);
+      opacity: 0.5;
+      z-index: 2;
+    }
+
+    .nextSlide {
+      transform: translateX(280px) scale(0.8);
+      opacity: 0.5;
+      z-index: 2;
+    }
+
+    .buttons {
+      margin-top: 10px;
+    }
+
+    .buttons button {
+      background: #1669C3;
+      color: white;
+      border: none;
+      padding: 10px 15px;
+      margin: 0 10px;
+      border-radius: 50%;
+      cursor: pointer;
+      font-size: 18px;
+    }
+    /* Parte do contato */
+    .contactcontainer {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      padding: 20px;
+      margin-top: -70px !important;
+      margin-bottom: 80px !important;
+    }
+
+    .contactcard {
+      position: relative;
+      width: 100%;
+      max-width: 1100px;
+      min-height: 600px;
+      border-radius: 40px;
+      overflow: hidden;
+      display: flex;
+      background: linear-gradient(to right, rgba(11, 23, 61, 0.95), rgba(11, 23, 61, 0.4)), url('../../assets/img/contato.jpg');
+      background-size: cover;
+      background-position: center;
+      box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+    }
+
+    .contactinfo {
+      flex: 1;
+      padding: 60px;
+      color: white;
+      z-index: 2;
+    }
+
+    .title {
+      font-size: 30px;
+      font-weight: bold;
+      color: white;
+      font-family: "Handlee", cursive;
+      margin-bottom: 20px;
+      font-weight: 700;
+    }
+
+    .description {
+      color: white;
+      font-family: "Open Sans", sans-serif;
+      line-height: 1.6;
+      font-size: 15px;
+      margin-bottom: 30px;
+      max-width: 450px;
+    }
+
+    .subtitle {
+      font-size: 15px;
+      font-family: "Open Sans", sans-serif;
+      margin-bottom: 25px;
+      color: white;
+    }
+
+    .channelitem {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      background: rgba(30, 58, 138, 0.3);
+      padding: 15px;
+      border-radius: 15px;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      margin-bottom: 15px;
+      width: fit-content;
+      min-width: 280px;
+    }
+
+    .iconbox {
+      background: #2563eb;
+      width: 30px;
+      height: 30px;
+      border-radius: 8px;
+      flex-shrink: 0;
+    }
+
+    .texts span {
+      display: block;
+      font-size: 14px;
+      font-family: "Open Sans", sans-serif;
+      color: white;
+    }
+
+    .texts strong {
+      font-size: 14px;
+      font-family: "Open Sans", sans-serif;
+    }
+    /* Lado Direito - Formulário Glass */
+    .contactformwrapper {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 40px;
+      z-index: 2;
+    }
+
+    .glassform {
+      width: 100%;
+      background: rgba(255, 255, 255, 0.08);
+      backdrop-filter: blur(15px);
+      -webkit-backdrop-filter: blur(15px);
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      padding: 40px;
+      border-radius: 30px;
+    }
+
+    .inputgroup {
+      margin-bottom: 20px;
+      font-family: "Open Sans", sans-serif;
+      width: 90%;
+    }
+
+    .inputgroup label {
+      display: block;
+      color: white;
+      font-size: 0.85rem;
+      margin-bottom: 8px;
+      margin-left: 5px;
+    }
+
+    .inputgroup input, 
+    .inputgroup textarea {
+      width: 100%;
+      background: rgba(255, 255, 255, 0.1);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 12px;
+      padding: 12px 15px;
+      color: white;
+      outline: none;
+      transition: all 0.3s ease;
+    }
+
+    .inputgroup input:focus, 
+    .inputgroup textarea:focus {
+      background: rgba(255, 255, 255, 0.15);
+      border-color: #2563eb;
+    }
+
+    .row {
+      display: flex;
+      gap: 15px;
+    }
+
+    .telcontainer {
+      display: flex;
+      align-items: center;
+      background: rgba(255, 255, 255, 0.1);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 12px;
+      overflow: hidden;
+    }
+
+    .prefix {
+      padding: 0 12px;
+      color: #d1d5db;
+      font-size: 0.9rem;
+      border-right: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .telcontainer input {
+      background: transparent !important;
+      border: none !important;
+    }
+
+    .btnsend {
+      width: 100%;
+      padding: 16px;
+      border: none;
+      border-radius: 12px;
+      background: linear-gradient(to right, #1e3a8a, #2563eb);
+      color: white;
+      font-weight: bold;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: transform 0.2s, opacity 0.2s;
+      margin-top: 10px;
+    }
+
+    .btnsend:hover {
+      opacity: 0.9;
+    }
+
+    .btnsend:active {
+      transform: scale(0.98);
+    }
+    .inputgroup select {
+      width: 112%;
+      background: rgba(255, 255, 255, 0.1);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 12px;
+      padding: 12px 15px;
+      color: white;
+      outline: none;
+      transition: all 0.3s ease;
+      font-family: "Open Sans", sans-serif;
+    }
+}
+
+@media (max-width: 900px) and (min-width: 800px) {
+   .heroSection {
+      background: linear-gradient(90deg, #01133F, #022a7a);
+      color: white;
+      height: 77vh;
+      padding: 4.8rem;
+      font-family: sans-serif;
+      overflow: hidden;
+    } 
+
+  .heroTop {
+    margin-top: 100px;
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+
+  .heroTop h1 {
+    font-family: "Handlee", cursive;
+    font-size: 30px;
+    margin-top: -16px;
+    margin-bottom: 1.5rem;
+  }
+
+  .imageWrapper {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .imageWrapper::before {
+    content: "";
+    position: absolute;
+    width: 600px;
+    height: 600px;
+    background: radial-gradient(circle, #1e88e5 0%, #1565c0 70%);
+    border-radius: 80%;
+    top: 60px; 
+    z-index: 0;
+  }
+
+  .imageWrapper img {
+    max-width: 340px;
+    width: 100%;
+    height: auto;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .heroBottom {
+    display: flex;
+    margin-top: -500px !important;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .satisfaction {
+    display: flex;
+    font-family: "Open Sans", sans-serif;
     flex-direction: column;
+    align-items: flex-start;
   }
+
+  .satisfaction p{
+    font-family: "Open Sans", sans-serif;
+    font-size: 20px;
+  }
+
+  .stars {
+    display: flex;
+    gap: 0.25rem;
+    font-family: "Open Sans", sans-serif;
+    margin-top: 0.5rem;
+    position: relative;
+    z-index: 3; 
+  }
+
+  .stars {
+    display: flex;
+    gap: 0.25rem;
+    font-family: "Open Sans", sans-serif;
+    margin-top: 0.5rem;
+    position: relative;
+    z-index: 3;
+  }
+
+  .star {
+    color: #ccc;
+    font-size: 1.5rem;
+    font-family: "Open Sans", sans-serif;
+    cursor: pointer;
+  }
+
+  .heroText {
+    max-width: 500px;
+    font-family: "Open Sans", sans-serif;
+    text-align: left;
+  }
+
+  .heroText p {
+    font-size: 15px;
+    color: white;
+    font-weight: bold;
+    font-family: "Open Sans", sans-serif;
+  }
+
+  .break800 {
+    display: inline;
+  }
+
+  .satisfaction p{
+    font-size: 15px;
+    color: white;
+    font-weight: bold;
+    font-family: "Open Sans", sans-serif;
+  }
+
+   /* segundo home */
+    .start1 {
+      padding: 90px 80px;
+      background: linear-gradient(90deg, #01133F, #022a7a);
+      text-align: center;
+      border-top: none;
+      font-family: Arial, sans-serif;
+    }
+
+    .statsparagrafo h1 {
+      font-size: 25px;
+      font-family: "Handlee", cursive;
+      color: white;
+      margin-bottom: 15px;
+    }
+
+    .statsparagrafo p {
+      max-width: 900px;
+      font-family: "Open Sans", sans-serif;
+      font-size: 15px;
+      margin: 0 auto;
+      color: white !important;
+      line-height: 1.6;
+    }
+
+    .statsparagrafo-grid {
+      grid-template-columns: repeat(4, 1fr);
+      justify-content: center;
+      max-width: 500px;
+      margin-top: 30px !important;
+      margin: auto;
+    }
+
+    .card {
+      cursor: pointer;
+      padding: 20px;
+      border-radius: 12px;
+      display: flex;       
+      align-items: center;
+      gap: 15px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+    }
+
+    .icon {
+      font-size: 35px;
+      color: #1e88e5;
+    }
+
+    .card h2 {
+      margin: 0;
+      font-size: 15px;
+      font-family: "Open Sans", sans-serif;
+      color: white;
+    }
+
+    .card p {
+      margin: 0;
+      font-size: 15px;
+      font-family: "Open Sans", sans-serif;
+      color: white;
+      text-align: left;
+    }
+    /* fim da segunda parte */
+    /*Terceira parte*/
+    .coursesheader h1 {
+      font-size: 30px;
+      font-family: "Handlee", cursive;
+      color: white;
+      font-weight: bold;
+      margin-top: -10px;
+      margin-bottom: 30px;
+      text-align: center;
+    }
+
+    .coursesgrid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1rem;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 1rem;
+    }
+    
+    .coursecard h2 {
+      font-size: 15px;
+      font-family: "Open Sans", sans-serif;
+      font-weight: bold;
+      margin-bottom: 0.5rem;
+      color: white;
+    }
+
+    .coursecard p {
+      font-size: 12px;
+      font-family: "Open Sans", sans-serif;
+      color: white;
+    }
+    .btnvermais {
+       width: 15%;
+      
+    }
+     /* Fim da Terceira parte */
+     /* Inicio  da Quarta parte */
+    .testemunhossection h1{
+        text-align: center;
+        color:  #02184B;
+        margin-top: 15px;
+        font-size: 30px;
+        font-family: "Handlee", cursive;
+        font-weight: bold;
+    }
+
+    .testemunhossection h3{
+        text-align: center;
+        color:  #1669C3;
+        margin-top: -70px;
+        font-family: "Open Sans", sans-serif;
+        font-weight: bold;
+    }
+
+    .testemunhossection {
+      text-align: center;
+      padding: 100px 0;
+    }
+
+    .sliderContainer {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 320px;
+      overflow: hidden;
+    }
+
+    .slide {
+      position: absolute;
+      width: 250px;
+      transition: all 0.5s ease;
+      opacity: 0;
+      display: flex;
+      justify-content: center;
+    }
+
+    .cardTestemunho {
+      background: linear-gradient(90deg, #01133F, #022a7a);
+      color: white;
+      padding: 30px;
+      cursor: pointer;
+      border-radius: 16px;
+      text-align: left;
+      width: 100%;
+      height: 170px;
+    }
+
+    .cardTestemunho h3{
+      color: white;
+      font-family: "Handlee", cursive;
+      margin-top: 20px;
+      margin-bottom: 10px;
+      text-align: center;
+    }
+
+    .cardTestemunho h4{
+      color: white;
+      font-family: "Handlee", cursive;
+      text-align: center;
+    }
+
+    .cardTestemunho p{
+      color: white;
+      font-family: "Open Sans", sans-serif;
+      text-align: center;
+      font-size: 14px;
+    }
+
+    .activeSlide {
+      opacity: 1;
+      transform: translateX(0) scale(1);
+      z-index: 3;
+    }
+
+    .prevSlide {
+      transform: translateX(-260px) scale(0.8);
+      opacity: 0.5;
+      z-index: 2;
+    }
+
+    .nextSlide {
+      transform: translateX(260px) scale(0.8);
+      opacity: 0.5;
+      z-index: 2;
+    }
+
+    .buttons {
+      margin-top: 10px;
+    }
+
+    .buttons button {
+      background: #1669C3;
+      color: white;
+      border: none;
+      padding: 10px 15px;
+      margin: 0 10px;
+      border-radius: 50%;
+      cursor: pointer;
+      font-size: 18px;
+    }
+    /* Parte do contato */
+    .contactcontainer {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      padding: 20px;
+      margin-top: -70px !important;
+      margin-bottom: 80px !important;
+    }
+
+    .contactcard {
+      position: relative;
+      width: 100%;
+      max-width: 1100px;
+      min-height: 600px;
+      border-radius: 40px;
+      overflow: hidden;
+      display: flex;
+      background: linear-gradient(to right, rgba(11, 23, 61, 0.95), rgba(11, 23, 61, 0.4)), url('../../assets/img/contato.jpg');
+      background-size: cover;
+      background-position: center;
+      box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+    }
+
+    .contactinfo {
+      flex: 1;
+      padding: 60px;
+      color: white;
+      z-index: 2;
+    }
+
+    .title {
+      font-size: 30px;
+      font-weight: bold;
+      color: white;
+      font-family: "Handlee", cursive;
+      margin-bottom: 20px;
+      font-weight: 700;
+    }
+
+    .description {
+      color: white;
+      font-family: "Open Sans", sans-serif;
+      line-height: 1.6;
+      font-size: 15px;
+      margin-bottom: 30px;
+      max-width: 450px;
+    }
+
+    .subtitle {
+      font-size: 15px;
+      font-family: "Open Sans", sans-serif;
+      margin-bottom: 25px;
+      color: white;
+    }
+
+    .channelitem {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      background: rgba(30, 58, 138, 0.3);
+      padding: 15px;
+      border-radius: 15px;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      margin-bottom: 15px;
+      width: fit-content;
+      min-width: 280px;
+    }
+
+    .iconbox {
+      background: #2563eb;
+      width: 30px;
+      height: 30px;
+      border-radius: 8px;
+      flex-shrink: 0;
+    }
+
+    .texts span {
+      display: block;
+      font-size: 14px;
+      font-family: "Open Sans", sans-serif;
+      color: white;
+    }
+
+    .texts strong {
+      font-size: 14px;
+      font-family: "Open Sans", sans-serif;
+    }
+    /* Lado Direito - Formulário Glass */
+    .contactformwrapper {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 40px;
+      z-index: 2;
+    }
+
+    .glassform {
+      width: 100%;
+      background: rgba(255, 255, 255, 0.08);
+      backdrop-filter: blur(15px);
+      -webkit-backdrop-filter: blur(15px);
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      padding: 40px;
+      border-radius: 30px;
+    }
+
+    .inputgroup {
+      margin-bottom: 20px;
+      font-family: "Open Sans", sans-serif;
+      width: 90%;
+    }
+
+    .inputgroup label {
+      display: block;
+      color: white;
+      font-size: 0.85rem;
+      margin-bottom: 8px;
+      margin-left: 5px;
+    }
+
+    .inputgroup input, 
+    .inputgroup textarea {
+      width: 100%;
+      background: rgba(255, 255, 255, 0.1);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 12px;
+      padding: 12px 15px;
+      color: white;
+      outline: none;
+      transition: all 0.3s ease;
+    }
+
+    .inputgroup input:focus, 
+    .inputgroup textarea:focus {
+      background: rgba(255, 255, 255, 0.15);
+      border-color: #2563eb;
+    }
+
+    .row {
+      display: flex;
+      gap: 15px;
+    }
+
+    .telcontainer {
+      display: flex;
+      align-items: center;
+      background: rgba(255, 255, 255, 0.1);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 12px;
+      overflow: hidden;
+    }
+
+    .prefix {
+      padding: 0 12px;
+      color: #d1d5db;
+      font-size: 0.9rem;
+      border-right: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .telcontainer input {
+      background: transparent !important;
+      border: none !important;
+    }
+
+    .btnsend {
+      width: 100%;
+      padding: 16px;
+      border: none;
+      border-radius: 12px;
+      background: linear-gradient(to right, #1e3a8a, #2563eb);
+      color: white;
+      font-weight: bold;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: transform 0.2s, opacity 0.2s;
+      margin-top: 10px;
+    }
+
+    .btnsend:hover {
+      opacity: 0.9;
+    }
+
+    .btnsend:active {
+      transform: scale(0.98);
+    }
+    .inputgroup select {
+      width: 120%;
+      background: rgba(255, 255, 255, 0.1);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 12px;
+      padding: 12px 15px;
+      color: white;
+      outline: none;
+      transition: all 0.3s ease;
+      font-family: "Open Sans", sans-serif;
+    }
+}
+
+@media (max-width: 800px) and (min-width: 700px) {
+   .heroSection {
+      background: linear-gradient(90deg, #01133F, #022a7a);
+      color: white;
+      height: 77vh;
+      padding: 4.8rem;
+      font-family: sans-serif;
+      overflow: hidden;
+    } 
+
+  .heroTop {
+    margin-top: 100px;
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+
+  .heroTop h1 {
+    font-family: "Handlee", cursive;
+    font-size: 25px;
+    margin-top: -16px;
+    margin-bottom: 1.5rem;
+  }
+
+  .imageWrapper {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .imageWrapper::before {
+    content: "";
+    position: absolute;
+    width: 600px;
+    height: 600px;
+    background: radial-gradient(circle, #1e88e5 0%, #1565c0 70%);
+    border-radius: 80%;
+    top: 80px; 
+    z-index: 0;
+  }
+
+  .imageWrapper::after {
+    content: "";
+    position: absolute;
+    width: 650px;
+    height: 650px;
+    background: radial-gradient(circle, rgba(30,136,229,0.3) 0%, transparent 70%);
+    border-radius: 80%;
+    top: 120px; 
+    z-index: 0;
+  }
+
+  .imageWrapper img {
+    max-width: 360px;
+    width: 100% !important;
+    height: auto;
+    position: relative;
+    z-index: 1;
+
+  }
+  
+  .heroBottom {
+    display: flex;
+    margin-top: -500px !important;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .break800 {
+    display: inline;
+  }
+
+  .satisfaction {
+    display: flex;
+    font-family: "Open Sans", sans-serif;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .satisfaction p{
+    font-family: "Open Sans", sans-serif;
+    font-size: 20px;
+  }
+
+  .stars {
+    display: flex;
+    gap: 0.25rem;
+    font-family: "Open Sans", sans-serif;
+    margin-top: 0.5rem;
+    position: relative;
+    z-index: 3; 
+  }
+
+  .stars {
+    display: flex;
+    gap: 0.25rem;
+    font-family: "Open Sans", sans-serif;
+    margin-top: 0.5rem;
+    position: relative;
+    z-index: 3;
+  }
+
+  .star {
+    color: #ccc;
+    font-size: 1.5rem;
+    font-family: "Open Sans", sans-serif;
+    cursor: pointer;
+  }
+
+  .heroText {
+    max-width: 500px;
+    font-family: "Open Sans", sans-serif;
+    text-align: left;
+  }
+
+  .heroText p {
+    font-size: 15px;
+    color: white;
+    font-weight: bold;
+    font-family: "Open Sans", sans-serif;
+    width: 100%;
+  }
+
+  .satisfaction p{
+    font-size: 15px;
+    color: white;
+    font-weight: bold;
+    font-family: "Open Sans", sans-serif;
+  }
+    /* segundo home */
+    .start1 {
+      padding: 90px 80px;
+      background: linear-gradient(90deg, #01133F, #022a7a);
+      text-align: center;
+      border-top: none;
+      font-family: Arial, sans-serif;
+    }
+
+    .statsparagrafo h1 {
+      font-size: 25px;
+      font-family: "Handlee", cursive;
+      color: white;
+      margin-bottom: 15px;
+    }
+
+    .statsparagrafo p {
+      max-width: 900px;
+      font-family: "Open Sans", sans-serif;
+      font-size: 15px;
+      margin: 0 auto;
+      color: white !important;
+      line-height: 1.6;
+    }
+
+    .statsparagrafo-grid {
+      grid-template-columns: repeat(4, 1fr);
+      justify-content: center;
+      max-width: 500px;
+      margin-top: 30px !important;
+      margin: auto;
+    }
+
+    .card {
+      cursor: pointer;
+      padding: 20px;
+      border-radius: 12px;
+      display: flex;       
+      align-items: center;
+      gap: 15px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+    }
+
+    .icon {
+      font-size: 35px;
+      color: #1e88e5;
+    }
+
+    .card h2 {
+      margin: 0;
+      font-size: 15px;
+      font-family: "Open Sans", sans-serif;
+      color: white;
+    }
+
+    .card p {
+      margin: 0;
+      font-size: 15px;
+      font-family: "Open Sans", sans-serif;
+      color: white;
+      text-align: left;
+    }
+    /* fim da segunda parte */ 
+     /*Terceira parte*/
+    .coursessection {
+      background: linear-gradient(90deg, #01133F, #022a7a);
+      color: white;
+      padding: 4rem 1.5rem;
+      position: relative;
+      clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+    }
+    .coursesheader h1 {
+      font-size: 25px;
+      font-family: "Handlee", cursive;
+      color: white;
+      font-weight: bold;
+      margin-top: -10px;
+      margin-bottom: 30px;
+      text-align: center;
+    }
+
+    .coursesgrid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1rem;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 1rem;
+    }
+    
+    .coursecard h2 {
+      font-size: 15px;
+      font-family: "Open Sans", sans-serif;
+      font-weight: bold;
+      margin-bottom: 0.5rem;
+      color: white;
+    }
+
+    .coursecard p {
+      font-size: 12px;
+      font-family: "Open Sans", sans-serif;
+      color: white;
+    }
+    .btnvermais {
+       width: 15%;  
+    }
+     /* Fim da Terceira parte */
+     /* Inicio  da Quarta parte */
+    .testemunhossection h1{
+        text-align: center;
+        color:  #02184B;
+        margin-top: 15px;
+        font-size: 25px;
+        font-family: "Handlee", cursive;
+        font-weight: bold;
+    }
+
+    .testemunhossection h3{
+        text-align: center;
+        color:  #1669C3;
+        margin-top: -70px;
+        font-family: "Open Sans", sans-serif;
+        font-weight: bold;
+    }
+
+    .testemunhossection {
+      text-align: center;
+      padding: 100px 0;
+    }
+
+    .sliderContainer {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 320px;
+      overflow: hidden;
+    }
+
+    .slide {
+      position: absolute;
+      width: 250px;
+      transition: all 0.5s ease;
+      opacity: 0;
+      display: flex;
+      justify-content: center;
+    }
+
+    .cardTestemunho {
+      background: linear-gradient(90deg, #01133F, #022a7a);
+      color: white;
+      padding: 30px;
+      cursor: pointer;
+      border-radius: 16px;
+      text-align: left;
+      width: 100%;
+      height: 170px;
+    }
+
+    .cardTestemunho h3{
+      color: white;
+      font-family: "Handlee", cursive;
+      margin-top: 20px;
+      margin-bottom: 10px;
+      text-align: center;
+    }
+
+    .cardTestemunho h4{
+      color: white;
+      font-family: "Handlee", cursive;
+      text-align: center;
+    }
+
+    .cardTestemunho p{
+      color: white;
+      font-family: "Open Sans", sans-serif;
+      text-align: center;
+      font-size: 13px;
+    }
+
+    .activeSlide {
+      opacity: 1;
+      transform: translateX(0) scale(1);
+      z-index: 3;
+    }
+
+    .prevSlide {
+      transform: translateX(-230px) scale(0.8);
+      opacity: 0.5;
+      z-index: 2;
+    }
+
+    .nextSlide {
+      transform: translateX(230px) scale(0.8);
+      opacity: 0.5;
+      z-index: 2;
+    }
+
+    .buttons {
+      margin-top: 10px;
+    }
+
+    .buttons button {
+      background: #1669C3;
+      color: white;
+      border: none;
+      padding: 10px 15px;
+      margin: 0 10px;
+      border-radius: 50%;
+      cursor: pointer;
+      font-size: 18px;
+    }
+    /* Parte do contato */
+    .contactcontainer {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: auto;
+      min-height: 100vh;
+      padding: 20px;
+      margin-top: -70px !important;
+      margin-bottom: 80px !important;
+    }
+
+    .contactcard {
+      position: relative;
+      width: 100%;
+      max-width: 1000px;
+      min-height: 600px;
+      border-radius: 40px;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(to right, rgba(11, 23, 61, 0.95), rgba(11, 23, 61, 0.4)), url('../../assets/img/contato.jpg');
+      background-size: cover;
+      background-position: center;
+      box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+    }
+
+    .contactinfo {
+      flex: 1;
+      padding: 60px;
+      color: white;
+      z-index: 2;
+    }
+
+    .title {
+      font-size: 30px;
+      font-weight: bold;
+      color: white;
+      font-family: "Handlee", cursive;
+      margin-bottom: 20px;
+      font-weight: 700;
+    }
+
+    .description {
+      color: white;
+      font-family: "Open Sans", sans-serif;
+      line-height: 1.6;
+      margin: auto;
+      font-size: 15px;
+      margin-bottom: 30px;
+      max-width: 450px;
+    }
+
+    .subtitle {
+      font-size: 15px;
+      font-family: "Open Sans", sans-serif;
+      margin-bottom: 25px;
+      color: white;
+    }
+
+    .channelitem {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      background: rgba(30, 58, 138, 0.3);
+      padding: 15px;
+      border-radius: 15px;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      margin-bottom: 15px;
+      width: fit-content;
+      min-width: 550px;
+    }
+
+    .iconbox {
+      background: #2563eb;
+      width: 30px;
+      height: 30px;
+      border-radius: 8px;
+      flex-shrink: 0;
+    }
+
+    .texts span {
+      display: block;
+      font-size: 14px;
+      font-family: "Open Sans", sans-serif;  
+      text-align: left !important; 
+    }
+
+    .texts strong {
+      font-size: 14px;
+      font-family: "Open Sans", sans-serif;
+    }
+    /* Lado Direito - Formulário Glass */
+    .contactcard {
+      position: relative;
+      width: 100%;
+      max-width: 1100px;
+      min-height: 40vh !important;
+      border-radius: 40px;
+      overflow: hidden;
+      display: flex;
+      background: linear-gradient(to right, rgba(11, 23, 61, 0.95), rgba(11, 23, 61, 0.4)), url('../../assets/img/contato.jpg');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+    }
+   .contactformwrapper {
+        flex: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 40px;
+        z-index: 2;
+    }
+
+    .glassform {
+        width: 100%;
+        max-width: 500px;
+        background: rgba(255, 255, 255, 0.08);
+        backdrop-filter: blur(15px);
+        -webkit-backdrop-filter: blur(15px);
+        border: 1px solid rgba(255, 255, 255, 0.15);
+        padding: 40px;
+        border-radius: 30px;
+        box-shadow: 0 20px 40px rgba(0,0,0,0.4); /* sombra equilibrada */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+    .inputgroup {
+        margin-bottom: 20px;
+        font-family: "Open Sans", sans-serif;
+        width: 100%;
+        max-width: 400px;
+      }
+
+    .inputgroup label {
+      display: block;
+      color: white;
+      font-size: 0.85rem;
+      margin-bottom: 8px;
+      margin-left: 5px;
+    }
+
+    .inputgroup input, 
+    .inputgroup textarea {
+      width: 100%;
+      background: rgba(255, 255, 255, 0.1);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 12px;
+      padding: 12px 15px;
+      color: white;
+      outline: none;
+      transition: all 0.3s ease;
+    }
+
+    .inputgroup input:focus, 
+    .inputgroup textarea:focus {
+      background: rgba(255, 255, 255, 0.15);
+      border-color: #2563eb;
+    }
+
+    .row {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      gap: 15px;
+    }
+
+    .telcontainer {
+      display: flex;
+      align-items: center;
+      background: rgba(255, 255, 255, 0.1);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 12px;
+      overflow: hidden;
+    }
+
+    .prefix {
+      padding: 0 12px;
+      color: #d1d5db;
+      font-size: 0.9rem;
+      border-right: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .telcontainer input {
+      background: transparent !important;
+      border: none !important;
+    }
+
+    .btnsend {
+      width: 100%;
+      padding: 16px;
+      border: none;
+      border-radius: 12px;
+      background: linear-gradient(to right, #1e3a8a, #2563eb);
+      color: white;
+      font-weight: bold;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: transform 0.2s, opacity 0.2s;
+      margin-top: 10px;
+    }
+
+    .btnsend:hover {
+      opacity: 0.9;
+    }
+
+    .btnsend:active {
+      transform: scale(0.98);
+    }
+
+    .contactcard {
+        flex-direction: column;
+        min-height: auto;
+    }
+
+    .contactinfo {
+        width: 100%;
+        padding: 40px 30px;
+        text-align: center;
+    }
+
+    .contactformwrapper {
+        width: 100%;
+        padding: 30px;
+    }
+
+    .channelitem {
+        margin: 0 auto 15px auto;
+    }
+    .inputgroup select {
+      width: 107%;
+      background: rgba(255, 255, 255, 0.1);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 12px;
+      padding: 12px 15px;
+      color: white;
+      outline: none;
+      transition: all 0.3s ease;
+      font-family: "Open Sans", sans-serif;
+    }
+}
+
+@media (max-width: 700px) and (min-width: 600px) {
+  .heroSection {
+    background: linear-gradient(90deg, #01133F, #022a7a);
+    color: white;
+    height: 80vh; 
+    padding: 4rem 2rem;
+    font-family: sans-serif;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  } 
+
+  .heroTop {
+    margin-top: 60px;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+
+  .heroTop h1 {
+    font-family: "Handlee", cursive;
+    font-size: 25px;
+    margin-top: -10px;
+    margin-bottom: 1.5rem;
+  }
+
+  .imageWrapper {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+  }
+
+  .imageWrapper::before {
+    content: "";
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    background: radial-gradient(circle, #1e88e5 0%, #1565c0 70%);
+    border-radius: 80%;
+    top: 130px; 
+    z-index: 0;
+  }
+
+  .imageWrapper::after {
+    content: "";
+    position: absolute;
+    width: 450px;
+    height: 450px;
+    background: radial-gradient(circle, rgba(30,136,229,0.3) 0%, transparent 70%);
+    border-radius: 80%;
+    top: 90px !important; 
+    z-index: 0;
+  }
+
+  .imageWrapper img {
+    max-width: 300px;
+    width: 100%;
+    height: auto;
+    transform: translateY(90px);
+
+    position: relative;
+    z-index: 1;
+  }
+
+  .heroBottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 1.2rem;
+  }
+
+  .heroText {
+    max-width: 420px;
+    font-family: "Open Sans", sans-serif;
+    margin-top: 30px;
+  }
+
+  .heroText p {
+    font-size: 15px;
+    color: white;
+    font-weight: bold;
+  }
+
+  .satisfaction {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Open Sans", sans-serif;
+    margin-bottom: -40px !important;
+  }
+
+  .satisfaction p {
+    font-size: 14px;
+    color: white;
+    font-weight: bold;
+  }
+
+  .stars {
+    display: flex;
+    gap: 0.3rem;
+    margin-top: 0.5rem;
+    z-index: 3;
+  }
+
+  .star {
+    color: #ccc;
+    font-size: 1.4rem;
+    cursor: pointer;
+  }
+
+    /* segundo home */
+    .start1 {
+      padding: 90px 80px;
+      background: linear-gradient(90deg, #01133F, #022a7a);
+      text-align: center;
+      border-top: none;
+      font-family: Arial, sans-serif;
+    }
+
+    .statsparagrafo h1 {
+      font-size: 30px;
+      font-family: "Handlee", cursive;
+      color: white;
+      margin-bottom: 15px;
+    }
+
+    .statsparagrafo p {
+      max-width: 900px;
+      font-family: "Open Sans", sans-serif;
+      font-size: 15px;
+      margin: 0 auto;
+      color: white !important;
+      line-height: 1.6;
+    }
+
+    .statsparagrafo-grid {
+      grid-template-columns: repeat(3, 1fr);
+      justify-content: center;
+      max-width: 500px;
+      margin-top: 30px !important;
+      margin: auto;
+    }
+
+    .card {
+      cursor: pointer;
+      padding: 20px;
+      border-radius: 12px;
+      display: flex;       
+      align-items: center;
+      gap: 15px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+    }
+
+    .icon {
+      font-size: 35px;
+      color: #1e88e5;
+    }
+
+    .card h2 {
+      margin: 0;
+      font-size: 15px;
+      font-family: "Open Sans", sans-serif;
+      color: white;
+    }
+
+    .card p {
+      margin: 0;
+      font-size: 15px;
+      font-family: "Open Sans", sans-serif;
+      color: white;
+      text-align: left;
+    }
+    /* fim da segunda parte */
+    /*Terceira parte*/
+    .coursessection {
+      background: linear-gradient(90deg, #01133F, #022a7a);
+      color: white;
+      padding: 4rem 1.5rem;
+      position: relative;
+      clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+    }
+    .coursesheader h1 {
+      font-size: 25px;
+      font-family: "Handlee", cursive;
+      color: white;
+      font-weight: bold;
+      margin-top: -70px;
+      margin-bottom: 30px;
+      text-align: center;
+    }
+
+    .coursesgrid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1rem;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 1rem;
+    }
+    
+    .coursecard h2 {
+      font-size: 15px;
+      font-family: "Open Sans", sans-serif;
+      font-weight: bold;
+      margin-bottom: 0.5rem;
+      color: white;
+    }
+
+    .coursecard p {
+      font-size: 12px;
+      font-family: "Open Sans", sans-serif;
+      color: white;
+    }
+    .btnvermais {
+       width: 20%;  
+    }
+    /* Fim da Terceira parte */
+     /* Inicio  da Quarta parte */
+    .sliderContainer {
+      height: 320px;
+    }
+
+    .slide {
+      width: 80%;
+    }
+
+    .activeSlide {
+      opacity: 1;
+      transform: translateX(0) scale(1);
+      z-index: 3;
+    }
+
+    .prevSlide,
+    .nextSlide {
+      opacity: 0;
+      transform: translateX(0) scale(1);
+      pointer-events: none;
+    }
+    /* Parte do contato */
+    .contactcard { 
+      position: relative; 
+      width: 100%; 
+      max-width: 1100px; 
+      min-height: 600px; 
+      border-radius: 40px; 
+      overflow: hidden;
+      display: flex; 
+      background: linear-gradient(to right, rgba(11, 23, 61, 0.95), rgba(11, 23, 61, 0.4)), url('../../assets/img/contato.jpg'); background-size: cover; background-repeat: no-repeat; 
+      background-position: center; 
+      box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5); }
+    
+    .contactcontainer {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: auto;
+      min-height: 100vh;
+      padding: 20px;
+      margin-top: -70px !important;
+      margin-bottom: 80px !important;
+    }
+
+    .contactcard {
+      position: relative;
+      width: 100%;
+      max-width: 1000px;
+      min-height: 600px;
+      border-radius: 40px;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(to right, rgba(11, 23, 61, 0.95), rgba(11, 23, 61, 0.4)), url('../../assets/img/contato.jpg');
+      background-size: cover;
+      background-position: center;
+      box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+    }
+
+    .contactinfo {
+      flex: 1;
+      padding: 60px;
+      color: white;
+      z-index: 2;
+    }
+
+    .title {
+      font-size: 25px;
+      font-weight: bold;
+      color: white;
+      font-family: "Handlee", cursive;
+      margin-bottom: 20px;
+      font-weight: 700;
+    }
+
+    .description {
+      color: white;
+      font-family: "Open Sans", sans-serif;
+      line-height: 1.6;
+      margin: auto;
+      font-size: 14px;
+      margin-bottom: 30px;
+      max-width: 450px;
+    }
+
+    .subtitle {
+      font-size: 14px;
+      font-family: "Open Sans", sans-serif;
+      margin-bottom: 25px;
+      color: white;
+    }
+
+    .channelitem {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      background: rgba(30, 58, 138, 0.3);
+      padding: 15px;
+      border-radius: 15px;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      margin-bottom: 15px;
+      width: fit-content;
+      min-width: 450px;
+    }
+
+    .iconbox {
+      background: #2563eb;
+      width: 30px;
+      height: 30px;
+      border-radius: 8px;
+      flex-shrink: 0;
+    }
+
+    .texts span {
+      display: block;
+      font-size: 14px;
+      font-family: "Open Sans", sans-serif;  
+      text-align: left !important; 
+    }
+
+    .texts strong {
+      font-size: 14px;
+      font-family: "Open Sans", sans-serif;
+    }
+    /* Lado Direito - Formulário Glass */
+   .contactformwrapper {
+        flex: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 40px;
+        z-index: 2;
+      }
+
+     .glassform {
+        width: 70%;
+        max-width: 500px;
+        background: rgba(255, 255, 255, 0.08);
+        backdrop-filter: blur(15px);
+        -webkit-backdrop-filter: blur(15px);
+        border: 1px solid rgba(255, 255, 255, 0.15);
+        padding: 40px;
+        border-radius: 30px;
+        box-shadow: 0 20px 40px rgba(0,0,0,0.4); /* sombra equilibrada */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .inputgroup {
+        margin-bottom: 20px;
+        font-family: "Open Sans", sans-serif;
+        width: 100%;
+        max-width: 400px;
+      }
+
+    .inputgroup label {
+      display: block;
+      color: white;
+      font-size: 0.85rem;
+      margin-bottom: 8px;
+      margin-left: 5px;
+    }
+
+    .inputgroup input, 
+    .inputgroup textarea {
+      width: 90%;
+      background: rgba(255, 255, 255, 0.1);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 12px;
+      padding: 12px 15px;
+      color: white;
+      outline: none;
+      transition: all 0.3s ease;
+    }
+
+    .inputgroup input:focus, 
+    .inputgroup textarea:focus {
+      background: rgba(255, 255, 255, 0.15);
+      border-color: #2563eb;
+    }
+
+    .row {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      gap: 15px;
+    }
+
+    .telcontainer {
+      display: flex;
+      align-items: center;
+      background: rgba(255, 255, 255, 0.1);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 12px;
+      overflow: hidden;
+    }
+
+    .prefix {
+      padding: 0 12px;
+      color: #d1d5db;
+      font-size: 0.9rem;
+      border-right: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .telcontainer input {
+      background: transparent !important;
+      border: none !important;
+    }
+
+    .btnsend {
+      width: 100%;
+      padding: 16px;
+      border: none;
+      border-radius: 12px;
+      background: linear-gradient(to right, #1e3a8a, #2563eb);
+      color: white;
+      font-weight: bold;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: transform 0.2s, opacity 0.2s;
+      margin-top: 10px;
+    }
+
+    .btnsend:hover {
+      opacity: 0.9;
+    }
+
+    .btnsend:active {
+      transform: scale(0.98);
+    }
+
+      .contactcard {
+        flex-direction: column;
+        min-height: auto;
+      }
+
+      .contactinfo {
+        width: 100%;
+        padding: 40px 30px;
+        text-align: center;
+      }
+
+      .contactformwrapper {
+        width: 100%;
+        padding: 30px;
+      }
+
+      .channelitem {
+        margin: 0 auto 15px auto;
+      }
+      .inputgroup select {
+        width: 98%;
+        background: rgba(255, 255, 255, 0.1);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        border-radius: 12px;
+        padding: 12px 15px;
+        color: white;
+        outline: none;
+        transition: all 0.3s ease;
+        font-family: "Open Sans", sans-serif;
+      }
+}
+
+@media (max-width: 600px) and (min-width: 500px) {
+  .heroSection {
+    background: linear-gradient(90deg, #01133F, #022a7a);
+    color: white;
+    height: 80vh; 
+    padding: 4rem 2rem;
+    font-family: sans-serif;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  } 
+
+  .heroTop {
+    margin-top: 60px;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+
+  .heroTop h1 {
+    font-family: "Handlee", cursive;
+    font-size: 25px;
+    margin-top: -10px;
+    margin-bottom: 1.5rem;
+  }
+
+  .imageWrapper {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+  }
+
+  .imageWrapper::before {
+    content: "";
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    background: radial-gradient(circle, #1e88e5 0%, #1565c0 70%);
+    border-radius: 80%;
+    top: 160px; 
+    z-index: 0;
+  }
+
+  .imageWrapper::after {
+    content: "";
+    position: absolute;
+    width: 450px;
+    height: 450px;
+    background: radial-gradient(circle, rgba(30,136,229,0.3) 0%, transparent 70%);
+    border-radius: 80%;
+    top: 70px; 
+    z-index: 0;
+  }
+
+  .imageWrapper img {
+    max-width: 300px;
+    width: 100%;
+    height: auto;
+    transform: translateY(90px);
+
+    position: relative;
+    z-index: 1;
+  }
+
+  .heroBottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 1.2rem;
+  }
+
+  .heroText {
+    max-width: 420px;
+    font-family: "Open Sans", sans-serif;
+    margin-top: 30px;
+  }
+
+  .heroText p {
+    font-size: 15px;
+    color: white;
+    font-weight: bold;
+  }
+
+  .satisfaction {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Open Sans", sans-serif;
+    margin-bottom: -40px !important;
+  }
+
+  .satisfaction p {
+    font-size: 14px;
+    color: white;
+    font-weight: bold;
+  }
+
+  .stars {
+    display: flex;
+    gap: 0.3rem;
+    margin-top: 0.5rem;
+    z-index: 3;
+  }
+
+  .star {
+    color: #ccc;
+    font-size: 1.4rem;
+    cursor: pointer;
+  }
+    /* segundo home */
+    .start1 {
+      padding: 90px 80px;
+      background: linear-gradient(90deg, #01133F, #022a7a);
+      text-align: center;
+      border-top: none;
+      font-family: Arial, sans-serif;
+    }
+
+    .statsparagrafo h1 {
+      font-size: 25px;
+      font-family: "Handlee", cursive;
+      color: white;
+      margin-bottom: 15px;
+    }
+
+    .statsparagrafo p {
+      max-width: 900px;
+      font-family: "Open Sans", sans-serif;
+      font-size: 15px;
+      margin: 0 auto;
+      color: white !important;
+      line-height: 1.6;
+    }
+
+    .statsparagrafo-grid {
+      grid-template-columns: repeat(2, 1fr);
+      justify-content: center;
+      max-width: 500px;
+      margin-top: 30px !important;
+      margin: auto;
+    }
+
+    .card {
+      cursor: pointer;
+      padding: 20px;
+      border-radius: 12px;
+      display: flex;       
+      align-items: center;
+      gap: 15px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+    }
+
+    .icon {
+      font-size: 35px;
+      color: #1e88e5;
+    }
+
+    .card h2 {
+      margin: 0;
+      font-size: 15px;
+      font-family: "Open Sans", sans-serif;
+      color: white;
+    }
+
+    .card p {
+      margin: 0;
+      font-size: 15px;
+      font-family: "Open Sans", sans-serif;
+      color: white;
+      text-align: left;
+    }
+    /* fim da segunda parte */
+    /*Terceira parte*/
+    .coursessection {
+      background: linear-gradient(90deg, #01133F, #022a7a);
+      color: white;
+      padding: 4rem 1.5rem;
+      position: relative;
+      clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+    }
+    .coursesheader h1 {
+      font-size: 25px;
+      font-family: "Handlee", cursive;
+      color: white;
+      font-weight: bold;
+      margin-top: -70px;
+      margin-bottom: 30px;
+      text-align: center;
+    }
+
+    .coursesgrid {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      gap: 1rem;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 1rem;
+    }
+    
+    .coursecard h2 {
+      font-size: 15px;
+      font-family: "Open Sans", sans-serif;
+      font-weight: bold;
+      margin-bottom: 0.5rem;
+      color: white;
+    }
+
+    .coursecard p {
+      font-size: 15px;
+      font-family: "Open Sans", sans-serif;
+      color: white;
+    }
+    .btnvermais {
+       width: 20%;  
+    }
+    /* fim da segunda parte */
+    /*inicio da quarta  parte*/
+     .testemunhossection h1{
+        text-align: center;
+        color:  #02184B;
+        margin-top: 15px;
+        font-size: 25px;
+        font-family: "Handlee", cursive;
+        font-weight: bold;
+    }
+
+    .testemunhossection h3{
+        text-align: center;
+        color:  #1669C3;
+        margin-top: -70px;
+        font-family: "Open Sans", sans-serif;
+        font-weight: bold;
+    }
+
+    .sliderContainer {
+      height: 320px;
+    }
+
+    .slide {
+      width: 80%;
+    }
+
+    .activeSlide {
+      opacity: 1;
+      transform: translateX(0) scale(1);
+      z-index: 3;
+    }
+
+    .prevSlide,
+    .nextSlide {
+      opacity: 0;
+      transform: translateX(0) scale(1);
+      pointer-events: none;
+    }
+
+     .cardTestemunho h3{
+      font-family: "Handlee", cursive;
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    .cardTestemunho h4{
+      font-family: "Handlee", cursive;
+      text-align: center;
+    }
+
+    .cardTestemunho p{
+      color: white;
+      font-family: "Open Sans", sans-serif;
+      text-align: center;
+      font-size: 13px;
+    }
+    /* Parte do contato */
+    .contactcontainer {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: auto;
+      min-height: 100vh;
+      padding: 20px;
+      margin-top: -70px !important;
+      margin-bottom: 80px !important;
+    }
+
+    .contactcard {
+      position: relative;
+      width: 100%;
+      max-width: 1000px;
+      min-height: 600px;
+      border-radius: 40px;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(to right, rgba(11, 23, 61, 0.95), rgba(11, 23, 61, 0.4)), url('../../assets/img/contato.jpg');
+      background-size: cover;
+      background-position: center;
+      box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+    }
+
+    .contactinfo {
+      flex: 1;
+      padding: 60px;
+      color: white;
+      z-index: 2;
+    }
+
+    .title {
+      font-size: 25px;
+      font-weight: bold;
+      color: white;
+      font-family: "Handlee", cursive;
+      margin-bottom: 20px;
+      font-weight: 700;
+    }
+
+    .description {
+      color: white;
+      font-family: "Open Sans", sans-serif;
+      line-height: 1.6;
+      margin: auto;
+      font-size: 14px;
+      margin-bottom: 30px;
+      max-width: 450px;
+    }
+
+    .subtitle {
+      font-size: 14px;
+      font-family: "Open Sans", sans-serif;
+      margin-bottom: 35px !important;
+      width: 60%;
+      margin: auto;
+    }
+
+    .channelitem {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      background: rgba(30, 58, 138, 0.3);
+      padding: 15px;
+      border-radius: 15px;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      margin-bottom: 15px;
+      width: fit-content;
+      min-width: 400px;
+    }
+
+    .iconbox {
+      background: #2563eb;
+      width: 30px;
+      height: 30px;
+      border-radius: 8px;
+      flex-shrink: 0;
+    }
+
+    .texts span {
+      display: block;
+      font-size: 14px;
+      font-family: "Open Sans", sans-serif;  
+      text-align: left !important; 
+    }
+
+    .texts strong {
+      font-size: 14px;
+      font-family: "Open Sans", sans-serif;
+    }
+    /* Lado Direito - Formulário Glass */
+   .contactformwrapper {
+        flex: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 40px;
+        z-index: 2;
+      }
+
+     .glassform {
+        width: 70%;
+        max-width: 500px;
+        background: rgba(255, 255, 255, 0.08);
+        backdrop-filter: blur(15px);
+        -webkit-backdrop-filter: blur(15px);
+        border: 1px solid rgba(255, 255, 255, 0.15);
+        padding: 40px;
+        border-radius: 30px;
+        box-shadow: 0 20px 40px rgba(0,0,0,0.4); /* sombra equilibrada */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .inputgroup {
+        margin-bottom: 20px;
+        font-family: "Open Sans", sans-serif;
+        width: 100%;
+        max-width: 400px;
+      }
+
+    .inputgroup label {
+      display: block;
+      color: white;
+      font-size: 0.85rem;
+      margin-bottom: 8px;
+      margin-left: 5px;
+    }
+
+    .inputgroup input, 
+    .inputgroup textarea {
+      width: 90%;
+      background: rgba(255, 255, 255, 0.1);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 12px;
+      padding: 12px 15px;
+      color: white;
+      outline: none;
+      transition: all 0.3s ease;
+    }
+
+    .inputgroup input:focus, 
+    .inputgroup textarea:focus {
+      background: rgba(255, 255, 255, 0.15);
+      border-color: #2563eb;
+    }
+
+    .row {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      gap: 15px;
+    }
+
+    .telcontainer {
+      display: flex;
+      align-items: center;
+      background: rgba(255, 255, 255, 0.1);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 12px;
+      overflow: hidden;
+    }
+
+    .prefix {
+      padding: 0 12px;
+      color: #d1d5db;
+      font-size: 0.9rem;
+      border-right: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .telcontainer input {
+      background: transparent !important;
+      border: none !important;
+    }
+
+    .btnsend {
+      width: 100%;
+      padding: 16px;
+      border: none;
+      border-radius: 12px;
+      background: linear-gradient(to right, #1e3a8a, #2563eb);
+      color: white;
+      font-weight: bold;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: transform 0.2s, opacity 0.2s;
+      margin-top: 10px;
+    }
+
+    .btnsend:hover {
+      opacity: 0.9;
+    }
+
+    .btnsend:active {
+      transform: scale(0.98);
+    }
+
+      .contactcard {
+        flex-direction: column;
+        min-height: auto;
+      }
+
+      .contactinfo {
+        width: 100%;
+        padding: 40px 30px;
+        text-align: center;
+      }
+
+      .contactformwrapper {
+        width: 100%;
+        padding: 30px;
+      }
+
+      .channelitem {
+        margin: 0 auto 15px auto;
+      }
+
+       .inputgroup select {
+        width: 98%;
+        background: rgba(255, 255, 255, 0.1);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        border-radius: 12px;
+        padding: 12px 15px;
+        color: white;
+        outline: none;
+        transition: all 0.3s ease;
+        font-family: "Open Sans", sans-serif;
+      }
+}
+
+@media (max-width: 500px) and (min-width: 400px) {
+  .heroSection {
+    background: linear-gradient(90deg, #01133F, #022a7a);
+    color: white;
+    height: 80vh; 
+    padding: 4rem 2rem;
+    font-family: sans-serif;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  } 
+
+  .heroTop {
+    margin-top: 60px;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+
+  .heroTop h1 {
+    font-family: "Handlee", cursive;
+    font-size: 20px;
+    margin-top: 50px;
+    margin-bottom: 1.5rem;
+  }
+
+  .imageWrapper {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+  }
+
+  .imageWrapper::before {
+    content: "";
+    position: absolute;
+    width: 350px;
+    height: 400px;
+    background: radial-gradient(circle, #1e88e5 0%, #1565c0 70%);
+    border-radius: 80%;
+    top: 160px; 
+    z-index: 0;
+  }
+
+  .imageWrapper::after {
+    content: "";
+    position: absolute;
+    width: 400px;
+    height: 450px;
+    background: radial-gradient(circle, rgba(30,136,229,0.3) 0%, transparent 70%);
+    border-radius: 80%;
+    top: 90px !important; 
+    z-index: 0;
+  }
+
+  .imageWrapper img {
+    max-width: 300px;
+    width: 100% !important;
+    height: auto;
+    transform: translateY(100px);
+    position: relative;
+    z-index: 1;
+  }
+
+  .heroBottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 1.2rem;
+  }
+
+  .heroText {
+    max-width: 420px;
+    font-family: "Open Sans", sans-serif;
+    margin-top: 30px;
+  }
+
+  .heroText p {
+    font-size: 13px;
+    color: white;
+    font-weight: bold;
+  }
+
+  .satisfaction {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Open Sans", sans-serif;
+    margin-bottom: -40px !important;
+  }
+
+  .satisfaction p {
+    font-size: 12px;
+    color: white;
+    font-weight: bold;
+  }
+
+  .stars {
+    display: flex;
+    gap: 0.3rem;
+    margin-top: 0.5rem;
+    z-index: 3;
+  }
+
+  .star {
+    color: #ccc;
+    font-size: 1.2rem;
+    cursor: pointer;
+  }
+
+    /* segundo home */
+    .start1 {
+      padding: 90px 80px;
+      background: linear-gradient(90deg, #01133F, #022a7a);
+      text-align: center;
+      border-top: none;
+      font-family: Arial, sans-serif;
+    }
+
+    .statsparagrafo h1 {
+      font-size: 25px;
+      font-family: "Handlee", cursive;
+      color: white;
+      margin-bottom: 15px;
+    }
+
+    .statsparagrafo p {
+      max-width: 900px;
+      font-family: "Open Sans", sans-serif;
+      font-size: 15px;
+      margin: 0 auto;
+      color: white !important;
+      line-height: 1.6;
+    }
+
+    .statsparagrafo-grid {
+      grid-template-columns: repeat(2, 1fr);
+      justify-content: center;
+      max-width: 500px;
+      margin-top: 30px !important;
+      margin: auto;
+    }
+
+    .card {
+      cursor: pointer;
+      padding: 20px;
+      border-radius: 12px;
+      display: flex;       
+      align-items: center;
+      gap: 15px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+    }
+
+    .icon {
+      font-size: 35px;
+      color: #1e88e5;
+    }
+
+    .card h2 {
+      margin: 0;
+      font-size: 15px;
+      font-family: "Open Sans", sans-serif;
+      color: white;
+    }
+
+    .card p {
+      margin: 0;
+      font-size: 15px;
+      font-family: "Open Sans", sans-serif;
+      color: white;
+      text-align: left;
+    }
+    /* fim da segunda parte */
+    /* inicio da terceira parte */
+    .coursessection {
+      background: linear-gradient(90deg, #01133F, #022a7a);
+      color: white;
+      padding: 4rem 1.5rem;
+      position: relative;
+      clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+    }
+     .coursesheader h1 {
+      font-size: 25px;
+      font-family: "Handlee", cursive;
+      color: white;
+      font-weight: bold;
+      margin-top: -70px;
+      margin-bottom: 30px;
+      text-align: center;
+    }
+
+    .coursesgrid {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      gap: 1rem;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 1rem;
+    }
+    
+    .coursecard h2 {
+      font-size: 15px;
+      font-family: "Open Sans", sans-serif;
+      font-weight: bold;
+      margin-bottom: 0.5rem;
+      color: white;
+    }
+
+    .coursecard p {
+      font-size: 14px;
+      font-family: "Open Sans", sans-serif;
+      color: white;
+    }
+    .btnvermais {
+       width: 35%;  
+    }
+    /*fim da terceira  parte*/
+    /*inicio da quarta  parte*/
+     .testemunhossection h1{
+        text-align: center;
+        color:  #02184B;
+        margin-top: 15px;
+        font-size: 25px;
+        font-family: "Handlee", cursive;
+        font-weight: bold;
+    }
+
+    .testemunhossection h3{
+        text-align: center;
+        color:  #1669C3;
+        margin-top: -70px;
+        font-family: "Open Sans", sans-serif;
+        font-weight: bold;
+    }
+
+    .sliderContainer {
+      height: 320px;
+    }
+
+    .slide {
+      width: 80%;
+    }
+
+    .activeSlide {
+      opacity: 1;
+      transform: translateX(0) scale(1);
+      z-index: 3;
+    }
+
+    .prevSlide,
+    .nextSlide {
+      opacity: 0;
+      transform: translateX(0) scale(1);
+      pointer-events: none;
+    }
+
+     .cardTestemunho h3{
+      font-family: "Handlee", cursive;
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    .cardTestemunho h4{
+      font-family: "Handlee", cursive;
+      text-align: center;
+    }
+
+    .cardTestemunho p{
+      color: white;
+      font-family: "Open Sans", sans-serif;
+      text-align: center;
+      font-size: 13px;
+    }
+     /* Parte do contato */
+    .contactcontainer {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: auto;
+      min-height: 100vh;
+      padding: 20px;
+      margin-top: -70px !important;
+      margin-bottom: 80px !important;
+    }
+
+    .contactcard {
+      position: relative;
+      width: 100%;
+      max-width: 1000px;
+      min-height: 600px;
+      border-radius: 40px;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(to right, rgba(11, 23, 61, 0.95), rgba(11, 23, 61, 0.4)), url('../../assets/img/contato.jpg');
+      background-size: cover;
+      background-position: center;
+      box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+    }
+
+    .contactinfo {
+      flex: 1;
+      padding: 60px;
+      color: white;
+      z-index: 2;
+    }
+
+    .title {
+      font-size: 25px;
+      font-weight: bold;
+      color: white;
+      font-family: "Handlee", cursive;
+      margin-bottom: 20px;
+      font-weight: 700;
+    }
+
+    .description {
+      color: white;
+      font-family: "Open Sans", sans-serif;
+      line-height: 1.6;
+      margin: auto;
+      font-size: 14px;
+      margin-bottom: 30px;
+      max-width: 450px;
+    }
+
+    .subtitle {
+      font-size: 14px;
+      font-family: "Open Sans", sans-serif;
+      margin-bottom: 35px !important;
+      width: 60%;
+      margin: auto;
+    }
+
+    .channelitem {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      background: rgba(30, 58, 138, 0.3);
+      padding: 15px;
+      border-radius: 15px;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      margin-bottom: 15px;
+      width: fit-content;
+      min-width: 300px;
+    }
+
+    .iconbox {
+      background: #2563eb;
+      width: 30px;
+      height: 30px;
+      border-radius: 8px;
+      flex-shrink: 0;
+    }
+
+    .texts span {
+      display: block;
+      font-size: 14px;
+      font-family: "Open Sans", sans-serif;  
+      text-align: left !important; 
+    }
+
+    .texts strong {
+      font-size: 14px;
+      font-family: "Open Sans", sans-serif;
+    }
+    /* Lado Direito - Formulário Glass */
+   .contactformwrapper {
+        flex: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 40px;
+        z-index: 2;
+      }
+
+     .glassform {
+        width: 68%;
+        max-width: 500px;
+        background: rgba(255, 255, 255, 0.08);
+        backdrop-filter: blur(15px);
+        -webkit-backdrop-filter: blur(15px);
+        border: 1px solid rgba(255, 255, 255, 0.15);
+        padding: 40px;
+        border-radius: 30px;
+        box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .inputgroup {
+        margin-bottom: 20px;
+        font-family: "Open Sans", sans-serif;
+        width: 100%;
+        max-width: 400px;
+      }
+
+    .inputgroup label {
+      display: block;
+      color: white;
+      font-size: 0.85rem;
+      margin-bottom: 8px;
+      margin-left: 5px;
+    }
+
+    .inputgroup input, 
+    .inputgroup textarea {
+      width: 90%;
+      background: rgba(255, 255, 255, 0.1);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 12px;
+      padding: 12px 15px;
+      color: white;
+      outline: none;
+      transition: all 0.3s ease;
+    }
+
+    .inputgroup input:focus, 
+    .inputgroup textarea:focus {
+      background: rgba(255, 255, 255, 0.15);
+      border-color: #2563eb;
+    }
+
+    .row {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      gap: 15px;
+    }
+
+    .telcontainer {
+      display: flex;
+      align-items: center;
+      background: rgba(255, 255, 255, 0.1);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 12px;
+      overflow: hidden;
+    }
+
+    .prefix {
+      padding: 0 12px;
+      color: #d1d5db;
+      font-size: 0.9rem;
+      border-right: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .telcontainer input {
+      background: transparent !important;
+      border: none !important;
+    }
+
+    .btnsend {
+      width: 100%;
+      padding: 16px;
+      border: none;
+      border-radius: 12px;
+      background: linear-gradient(to right, #1e3a8a, #2563eb);
+      color: white;
+      font-weight: bold;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: transform 0.2s, opacity 0.2s;
+      margin-top: 10px;
+    }
+
+    .btnsend:hover {
+      opacity: 0.9;
+    }
+
+    .btnsend:active {
+      transform: scale(0.98);
+    }
+
+      .contactcard {
+        flex-direction: column;
+        min-height: auto;
+      }
+
+      .contactinfo {
+        width: 100%;
+        padding: 40px 30px;
+        text-align: center;
+      }
+
+      .contactformwrapper {
+        width: 100%;
+        padding: 30px;
+      }
+
+      .channelitem {
+        margin: 0 auto 15px auto;
+      }
+       .inputgroup select {
+        width: 102%;
+        background: rgba(255, 255, 255, 0.1);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        border-radius: 12px;
+        padding: 12px 15px;
+        color: white;
+        outline: none;
+        transition: all 0.3s ease;
+        font-family: "Open Sans", sans-serif;
+      }
+}
+
+@media (max-width: 400px) and (min-width: 320px) {
+  .heroSection {
+    background: linear-gradient(90deg, #01133F, #022a7a);
+    color: white;
+    height: 80vh; 
+    padding: 4rem 2rem;
+    font-family: sans-serif;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  } 
+
+  .heroTop {
+    margin-top: 80px;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+
+  .heroTop h1 {
+    font-family: "Handlee", cursive;
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 1.5rem;
+  }
+
+  .imageWrapper {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+  }
+
+  .imageWrapper::before {
+    content: "";
+    position: absolute;
+    width: 350px;
+    height: 400px;
+    background: radial-gradient(circle, #1e88e5 0%, #1565c0 70%);
+    border-radius: 80%;
+    top: 160px; 
+    z-index: 0;
+  }
+
+  .imageWrapper::after {
+    content: "";
+    position: absolute;
+    width: 450px;
+    height: 450px;
+    background: radial-gradient(circle, rgba(30,136,229,0.3) 0%, transparent 70%);
+    border-radius: 80%;
+    top: 70px; 
+    z-index: 0;
+  }
+
+  .imageWrapper img {
+    max-width: 300px;
+    width: 100%;
+    height: auto;
+    transform: translateY(130px);
+    position: relative;
+    z-index: 1;
+  }
+
+  .heroBottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 1.2rem;
+  }
+
+  .heroText {
+    max-width: 420px;
+    font-family: "Open Sans", sans-serif;
+    margin-top: 30px;
+  }
+
+  .heroText p {
+    font-size: 13px;
+    color: white;
+    font-weight: bold;
+  }
+
+  .satisfaction {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Open Sans", sans-serif;
+    margin-bottom: -40px !important;
+  }
+
+  .satisfaction p {
+    font-size: 13px;
+    color: white;
+    font-weight: bold;
+  }
+
+  .stars {
+    display: flex;
+    gap: 0.3rem;
+    margin-top: 0.5rem;
+    z-index: 3;
+  }
+
+  .star {
+    color: #ccc;
+    font-size: 1.2rem;
+    cursor: pointer;
+  }
+    /* segundo home */
+    .start1 {
+      padding: 90px 80px;
+      background: linear-gradient(90deg, #01133F, #022a7a);
+      text-align: center;
+      border-top: none;
+      font-family: Arial, sans-serif;
+    }
+
+    .statsparagrafo h1 {
+      font-size: 20px;
+      font-family: "Handlee", cursive;
+      color: white;
+      margin-bottom: 15px;
+    }
+
+    .statsparagrafo p {
+      max-width: 900px;
+      font-family: "Open Sans", sans-serif;
+      font-size: 13px;
+      margin: 0 auto;
+      color: white !important;
+      line-height: 1.6;
+    }
+
+    .statsparagrafo-grid {
+      grid-template-columns: repeat(2, 1fr);
+      justify-content: center;
+      max-width: 500px;
+      margin-top: 30px !important;
+      margin: auto;
+    }
+
+    .card {
+      cursor: pointer;
+      padding: 20px;
+      border-radius: 12px;
+      display: flex;       
+      align-items: center;
+      gap: 15px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+    }
+
+    .icon {
+      font-size: 30px;
+      color: #1e88e5;
+    }
+
+    .card h2 {
+      margin: 0;
+      font-size: 13px;
+      font-family: "Open Sans", sans-serif;
+      color: white;
+    }
+
+    .card p {
+      margin: 0;
+      font-size: 13px;
+      font-family: "Open Sans", sans-serif;
+      color: white;
+      text-align: left;
+    }
+    /* fim da segunda parte */
+    /* inicio da terceira parte */
+    .coursessection {
+      background: linear-gradient(90deg, #01133F, #022a7a);
+      color: white;
+      padding: 4rem 1.5rem;
+      position: relative;
+      clip-path: polygon(0 0, 100% 0, 100% 95%, 0 100%);
+    }
+     .coursesheader h1 {
+      font-size: 25px;
+      font-family: "Handlee", cursive;
+      color: white;
+      font-weight: bold;
+      margin-top: -70px;
+      margin-bottom: 30px;
+      text-align: center;
+    }
+
+    .coursesgrid {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      gap: 1rem;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 1rem;
+    }
+    
+    .coursecard h2 {
+      font-size: 15px;
+      font-family: "Open Sans", sans-serif;
+      font-weight: bold;
+      margin-bottom: 0.5rem;
+      color: white;
+    }
+
+    .coursecard p {
+      font-size: 14px;
+      font-family: "Open Sans", sans-serif;
+      color: white;
+    }
+    .btnvermais {
+       width: 40%;  
+    }
+    /*fim da terceira  parte*/
+    /*inicio da quarta  parte*/
+     .testemunhossection h1{
+        text-align: center;
+        color:  #02184B;
+        margin-top: 15px;
+        font-size: 25px;
+        font-family: "Handlee", cursive;
+        font-weight: bold;
+    }
+
+    .testemunhossection h3{
+        text-align: center;
+        color:  #1669C3;
+        margin-top: -70px;
+        font-family: "Open Sans", sans-serif;
+        font-weight: bold;
+        font-size: 15px;
+    }
+
+    .sliderContainer {
+      height: 320px;
+    }
+
+    .slide {
+      width: 80%;
+    }
+
+    .activeSlide {
+      opacity: 1;
+      transform: translateX(0) scale(1);
+      z-index: 3;
+    }
+
+    .prevSlide,
+    .nextSlide {
+      opacity: 0;
+      transform: translateX(0) scale(1);
+      pointer-events: none;
+    }
+
+     .cardTestemunho h3{
+      font-family: "Handlee", cursive;
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    .cardTestemunho h4{
+      font-family: "Handlee", cursive;
+      text-align: center;
+    }
+
+    .cardTestemunho p{
+      color: white;
+      font-family: "Open Sans", sans-serif;
+      text-align: center;
+      font-size: 13px;
+    } 
+    /* Parte do contato */
+    .contactcontainer {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: auto;
+      min-height: 100vh;
+      padding: 20px;
+      margin-top: -70px !important;
+      margin-bottom: 80px !important;
+    }
+
+    .contactcard {
+      position: relative;
+      width: 100%;
+      max-width: 1000px;
+      min-height: 600px;
+      border-radius: 40px;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(to right, rgba(11, 23, 61, 0.95), rgba(11, 23, 61, 0.4)), url('../../assets/img/contato.jpg');
+      background-size: cover;
+      background-position: center;
+      box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+    }
+
+    .contactinfo {
+      flex: 1;
+      padding: 60px;
+      color: white;
+      z-index: 2;
+    }
+
+    .title {
+      font-size: 20px;
+      font-weight: bold;
+      color: white;
+      font-family: "Handlee", cursive;
+      margin-bottom: 20px;
+      font-weight: 700;
+    }
+
+    .description {
+      color: white;
+      font-family: "Open Sans", sans-serif;
+      line-height: 1.6;
+      margin: auto;
+      font-size: 13px;
+      margin-bottom: 30px;
+      max-width: 450px;
+    }
+
+    .subtitle {
+      font-size: 13px;
+      font-family: "Open Sans", sans-serif;
+      margin-bottom: 35px !important;
+      width: 60%;
+      margin: auto;
+    }
+
+    .channelitem {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      background: rgba(30, 58, 138, 0.3);
+      padding: 15px;
+      border-radius: 15px;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      margin-bottom: 15px;
+      width: fit-content;
+      min-width: 240px;
+    }
+
+    .iconbox {
+      background: #2563eb;
+      width: 20px;
+      height: 30px;
+      border-radius: 8px;
+      flex-shrink: 0;
+    }
+
+    .texts span {
+      display: block;
+      font-size: 13px;
+      font-family: "Open Sans", sans-serif;  
+      text-align: left !important; 
+    }
+
+    .texts strong {
+      font-size: 13px;
+      font-family: "Open Sans", sans-serif;
+    }
+    /* Lado Direito - Formulário Glass */
+   .contactformwrapper {
+        flex: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 40px;
+        z-index: 2;
+      }
+
+     .glassform {
+        width: 68%;
+        max-width: 500px;
+        background: rgba(255, 255, 255, 0.08);
+        backdrop-filter: blur(15px);
+        -webkit-backdrop-filter: blur(15px);
+        border: 1px solid rgba(255, 255, 255, 0.15);
+        padding: 40px;
+        border-radius: 30px;
+        box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .inputgroup {
+        margin-bottom: 20px;
+        font-family: "Open Sans", sans-serif;
+        width: 100%;
+        max-width: 400px;
+      }
+
+    .inputgroup label {
+      display: block;
+      color: white;
+      font-size: 0.85rem;
+      margin-bottom: 8px;
+      margin-left: 5px;
+    }
+
+    .inputgroup input, 
+    .inputgroup textarea {
+      width: 90%;
+      background: rgba(255, 255, 255, 0.1);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 12px;
+      padding: 12px 15px;
+      color: white;
+      outline: none;
+      transition: all 0.3s ease;
+    }
+
+    .inputgroup input:focus, 
+    .inputgroup textarea:focus {
+      background: rgba(255, 255, 255, 0.15);
+      border-color: #2563eb;
+    }
+
+    .row {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      gap: 15px;
+    }
+
+    .telcontainer {
+      display: flex;
+      align-items: center;
+      background: rgba(255, 255, 255, 0.1);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 12px;
+      overflow: hidden;
+    }
+
+    .prefix {
+      padding: 0 12px;
+      color: #d1d5db;
+      font-size: 0.9rem;
+      border-right: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .telcontainer input {
+      background: transparent !important;
+      border: none !important;
+    }
+
+    .btnsend {
+      width: 100%;
+      padding: 16px;
+      border: none;
+      border-radius: 12px;
+      background: linear-gradient(to right, #1e3a8a, #2563eb);
+      color: white;
+      font-weight: bold;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: transform 0.2s, opacity 0.2s;
+      margin-top: 10px;
+    }
+
+    .btnsend:hover {
+      opacity: 0.9;
+    }
+
+    .btnsend:active {
+      transform: scale(0.98);
+    }
+
+      .contactcard {
+        flex-direction: column;
+        min-height: auto;
+      }
+
+      .contactinfo {
+        width: 100%;
+        padding: 40px 30px;
+        text-align: center;
+      }
+
+      .contactformwrapper {
+        width: 100%;
+        padding: 30px;
+      }
+
+      .channelitem {
+        margin: 0 auto 15px auto;
+      }
+       .inputgroup select {
+        width: 105% !important;
+        background: rgba(255, 255, 255, 0.1);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        border-radius: 12px;
+        padding: 12px 15px;
+        color: white;
+        outline: none;
+        transition: all 0.3s ease;
+        font-family: "Open Sans", sans-serif;
+      } 
+}
+
+@media (max-width: 360px) and (min-width: 320px){
+  .heroSection {
+    background: linear-gradient(90deg, #01133F, #022a7a);
+    color: white;
+    height: 80vh; 
+    padding: 4rem 2rem;
+    font-family: sans-serif;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  } 
+
+  .break800 {
+    display: inline;
+  }
+
+  .heroTop {
+    margin-top: 80px;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+
+  .heroTop h1 {
+    font-family: "Handlee", cursive;
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 1.5rem;
+  }
+
+  .imageWrapper {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+  }
+
+  .imageWrapper::before {
+    content: "";
+    position: absolute;
+    width: 300px !important;
+    height: 400px;
+    background: radial-gradient(circle, #1e88e5 0%, #1565c0 70%);
+    border-radius: 80%;
+    top: 160px; 
+    z-index: 0;
+  }
+
+  .imageWrapper::after {
+    content: "";
+    position: absolute;
+    width: 300px;
+    height: 400px;
+    background: radial-gradient(circle, rgba(30,136,229,0.3) 0%, transparent 30%) !important;
+    border-radius: 80%;
+    top: 50px; 
+    z-index: 0;
+  }
+
+  .imageWrapper img {
+    max-width: 300px;
+    width: 100%;
+    height: auto;
+    transform: translateY(130px);
+    position: relative;
+    z-index: 1;
+  }
+
+  .heroBottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 1.2rem;
+  }
+
+  .heroText {
+    max-width: 420px;
+    font-family: "Open Sans", sans-serif;
+    margin-top: 70px !important;
+  }
+
+  .heroText p {
+    font-size: 13px;
+    color: white;
+    font-weight: bold;
+  }
+
+  .satisfaction {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Open Sans", sans-serif;
+    margin-bottom: -40px !important;
+  }
+
+  .satisfaction p {
+    font-size: 13px;
+    color: white;
+    font-weight: bold;
+  }
+
+  .stars {
+    display: flex;
+    gap: 0.3rem;
+    margin-top: 0.5rem;
+    z-index: 3;
+  }
+
+  .star {
+    color: #ccc;
+    font-size: 1.2rem;
+    cursor: pointer;
+  }
+
+   .inputgroup select {
+        width: 100%;
+        background: rgba(255, 255, 255, 0.1);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        border-radius: 12px;
+        padding: 12px 15px;
+        color: white;
+        outline: none;
+        transition: all 0.3s ease;
+        font-family: "Open Sans", sans-serif;
+      }
 }

@@ -13,16 +13,31 @@ import img13 from '../../assets/img/miria.webp';
 import img14 from '../../assets/img/git.png'; 
 import img15 from '../../assets/img/next.jpg'; 
 import img16 from '../../assets/img/js.webp'; 
+import img17 from '../../assets/img/img 17.jpg';
+import img18 from '../../assets/img/img 18.jfif';  
+
+// ✅ TIPAGEM DO CURSO
+type Curso = {
+  titulo: string;
+  descricao: string;
+  img: string;
+  preco?: {
+    presencial: string;
+    online: string;
+    domicilio: string;
+    duracao: string;
+  };
+};
 
 function Cursos() {
 
   const [modalOpen, setModalOpen] = useState(false);
-  const [cursoSelecionado, setCursoSelecionado] = useState("");
+  const [cursoSelecionado, setCursoSelecionado] = useState<Curso | null>(null);
 
-  const cursos = [
+  const cursos: Curso[] = [
     {
       titulo: "Programação Web",
-      descricao: "Aprenda a criar sites modernos e responsivos do zero com HTML & CSS.",
+      descricao: "Aprenda a criar sites modernos e responsivos com HTML & CSS.",
       img: img7
     },
     {
@@ -79,10 +94,33 @@ function Cursos() {
       titulo: "Next.js",
       descricao: "Framework moderno para aplicações React.",
       img: img15
+    },
+
+    {
+      titulo: "Excel Avançado",
+      descricao: "Aprenda funções avançadas, dashboards e automação no Excel",
+      img: img18,
+      preco: {
+        presencial: "40.000 Kz",
+        online: "30.000 Kz",
+        domicilio: "50.000 Kz",
+        duracao: "1 meses"
+      }
+    },
+    {
+      titulo: "Power BI",
+      descricao: "Criação de dashboards e análise de dados com Power BI.",
+      img: img17,
+      preco: {
+        presencial: "50.000 Kz",
+        online: "40.000 Kz",
+        domicilio: "60.000 Kz",
+        duracao: "1 meses"
+      }
     }
   ];
 
-  const abrirModal = (curso: string) => {
+  const abrirModal = (curso: Curso) => {
     setCursoSelecionado(curso);
     setModalOpen(true);
   };
@@ -96,17 +134,19 @@ function Cursos() {
       <div className={styles.container}>
         <h1 className={styles.titulo}>Nossos Cursos</h1>
         <p className={styles.subtitulo}>
-            Temos para si os melhores cursos que vão te ajudar na sua trajectória académica
+          Temos para si os melhores cursos que vão te ajudar na sua trajectória académica
         </p>
+
         <div className={styles.grid}>
           {cursos.map((curso, index) => (
             <div key={index} className={styles.card}>
               <img src={curso.img} alt={curso.titulo} />
-              <h2>{curso.titulo}</h2>
+              <h2 className={styles.descricaoh2}>{curso.titulo}</h2>
               <p className={styles.descricao}>{curso.descricao}</p>
+
               <button
                 className={styles.btn}
-                onClick={() => abrirModal(curso.titulo)}
+                onClick={() => abrirModal(curso)}
               >
                 Saiba mais
               </button>
@@ -121,14 +161,38 @@ function Cursos() {
             className={styles.modal}
             onClick={(e) => e.stopPropagation()}
           >
-                <h2 className={styles.modelph1}>{cursoSelecionado}</h2>
-                <p className={styles.modelp}> <strong>📍 Presencial:</strong> <strong className={styles.modelpp}>20.000 Kz</strong></p>
-                
-                <p className={styles.modelp}><strong>💻 Online:</strong> <strong className={styles.modelpp}>15.000 Kz</strong></p>
-               
-                <p className={styles.modelp}><strong>🏠 Ao domicílio:</strong> <strong className={styles.modelpp}>30.000 Kz</strong></p>
-               
-                <p className={styles.modelp}><strong>⏳ Duração:</strong> <strong className={styles.modelpp}>2 meses</strong></p>
+            <h2 className={styles.modelph1}>
+              {cursoSelecionado?.titulo}
+            </h2>
+
+            <p className={styles.modelp}>
+              <strong>📍 Presencial:</strong>{" "}
+              <strong className={styles.modelpp}>
+                {cursoSelecionado?.preco?.presencial || "20.000 Kz"}
+              </strong>
+            </p>
+
+            <p className={styles.modelp}>
+              <strong>💻 Online:</strong>{" "}
+              <strong className={styles.modelpp}>
+                {cursoSelecionado?.preco?.online || "15.000 Kz"}
+              </strong>
+            </p>
+
+            <p className={styles.modelp}>
+              <strong>🏠 Ao domicílio:</strong>{" "}
+              <strong className={styles.modelpp}>
+                {cursoSelecionado?.preco?.domicilio || "30.000 Kz"}
+              </strong>
+            </p>
+
+            <p className={styles.modelp}>
+              <strong>⏳ Duração:</strong>{" "}
+              <strong className={styles.modelpp}>
+                {cursoSelecionado?.preco?.duracao || "2 meses"}
+              </strong>
+            </p>
+
             <button onClick={fecharModal} className={styles.closeBtn}>
               Fechar
             </button>

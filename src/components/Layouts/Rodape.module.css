@@ -1,195 +1,651 @@
 .footer {
-   background: #01133F;
-  color: white;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding-top: 20px;
+  background: #0b173d;
+  color: #ccc;
+  padding-top: 50px;
 }
-
+/* CONTAINER */
 .container {
-  max-width: 1200px;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  padding: 0 20px 40px 20px;
+  max-width: 1100px;
+  margin: auto;
+  padding: 0 90px;
+  display: grid;
+  gap: clamp(100px, 36vw, 35px) !important;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 90px;
 }
 
-.logoPlaceholder {
-  width: 150px;
-  height: 50px;
-  background-color: black;
-  margin-bottom: 20px;
+.col {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.logoPlaceholder h1 {
+  font-family: "Handlee", cursive;
+  font-size: 25px;
+  color: white;
 }
 
 .tagline {
-  font-size: 15px;
   color: white;
-  margin-bottom: 30px;
-  text-align: center;
-  font-weight: bold;
+  font-size: 14px;
+  width: 150% !important;
+  line-height: 1.6;
+  margin-left: 110px !important;
   font-family: "Open Sans", sans-serif;
-  margin-top: 30px;
+  font-size: 20px;
 }
 
-.nav {
-  display: flex;
-  font-family: "Open Sans", sans-serif;
-  gap: 10px;
-  margin-bottom: 40px;
+.col h3 {
+  font-family: "Handlee", cursive;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.colh3{
+  margin-top: 15px;
+  margin-left: -100px !important;
 }
 
 .list {
-    display: flex;
-    list-style: none;
-    align-items: center;
-    text-align: center;
-    margin-left: 68px !important;
-    font-size: 17px;
-    font-family: "Open Sans", sans-serif;
-    font-weight: bold;
-    gap: 4rem; 
-    margin: 0;
-    padding: 0;
-}
-
-.item a {
-    position: relative;
-    color: #fff;
-    text-decoration: none;
-    font-weight: 500;
-}
-
-.item a::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: -4px;
-    width: 0%;
-    height: 2px;
-    background-color: #02C8F0;
-    transition: width 0.3s ease;
-}
-
-.item a:hover::after {
-    width: 100%;
-}
-
-.actions {
-  display: flex;
-  gap: 20px;
-}
-
-.btnPrimary {
-  background-color: white;
-  color: #1e3a8a;
-  border: none;
-  padding: 12px 35px;
-  border-radius: 8px;
-  font-weight: bold;
-  font-family: "Open Sans", sans-serif;
-  cursor: pointer;
-  transition: transform 0.2s;
-}
-
-.btnSecondary {
-  background-color: transparent;
-  color: white;
-  border: 1px solid white;
-  padding: 12px 35px;
-  border-radius: 8px;
-  font-weight: bold;
-  font-family: "Open Sans", sans-serif;
-  cursor: pointer;
-  transition: background 0.2s;
-}
-
-.socialList {
   list-style: none;
   padding: 0;
 }
 
-.socialItem {
-  display: flex;
-  gap: 8px;
-  margin-top: -10px;
+.list li {
+  margin-bottom: 10px;
 }
 
-.socialItem a {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 12px;
-  border-radius: 9999px;
-  font-size: 20px;
+.list a {
   color: white;
+  font-family: "Open Sans", sans-serif;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.list a:hover {
+  color: #1e88e5;
+}
+
+.col p {
+  color: white;
+   font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+}
+
+.socialContainer {
+  display: flex;
+  margin-left: -90px !important;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.socialContainer a {
+  font-size: 20px;
   transition: 0.3s;
 }
 
 .linkedin {
-  background-color: #001854;
-}
-
-.linkedin:hover {
-  background-color: #2563eb;
+  color: #0a66c2;
 }
 
 .facebook {
-   background: linear-gradient(
-     135deg, 
-     #1877F2,
-     #0d47a1);
-}
-
-.instagram:hover {
-  opacity: 0.8;
+  color: #1877f2;
 }
 
 .whatsapp {
-  background: linear-gradient(
-    to right,
-    #25d366,
-    #128c7e
-  );
+  color: #25d366;
 }
 
-.whatsapp:hover {
-  opacity: 0.8;
+.socialContainer a:hover {
+  transform: scale(1.2);
 }
 
 .bottomBar {
-  width: 100%;
-  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  margin-top: 40px;
   padding: 20px 0;
-  font-size: 0.8rem;
-  color: #94a3b8;
 }
 
 .bottomContent {
-  max-width: 1200px;
+  max-width: 1100px;
   margin: 0 auto;
   padding: 0 20px;
-  font-family: "Open Sans", sans-serif;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  font-size: 13px;
+  color: #aaa;
 }
 
 .policyLink {
-  color: #94a3b8;
+  color: #ccc;
   text-decoration: none;
 }
 
 .policyLink:hover {
-  text-decoration: underline;
-  font-family: "Open Sans", sans-serif;
+  color: #1e88e5;
 }
 
-.logoPlaceholder img {
-    height: 90px;
-    font-family: "Open Sans", sans-serif;
-    width: 100%;
+@media (max-width: 1218px) and (min-width: 1200px){
+    .colh3{
+      margin-top: 48px;
+      margin-left: -100px !important;
+    }
+}
+
+@media (max-width: 1200px) and (min-width: 1100px){
+    .colh3{
+      margin-top: 48px;
+      margin-left: -100px !important;
+    }
+
+    .colhp{
+      margin-left: -20px !important;
+    }
+}
+
+@media (max-width: 1100px) and (min-width: 1000px){
+    .colh3{
+      margin-top: 48px;
+      margin-left: -100px !important;
+    }
+
+    .colhp{
+      margin-left: -30px !important;
+    }
+}
+
+@media (max-width: 1000px) and (min-width: 900px){
+     .container {
+      grid-template-columns: repeat(3, 1fr);
+      gap: 50px !important;
+    }
+
+    .col:first-child {
+      grid-column: 1 / -1;
+      align-items: center;
+      text-align: center;
+    }
+
+    .col:first-child .tagline {
+      width: 100% !important;
+      margin-left: 0 !important;
+    }
+
+    .socialContainer {
+      margin-left: 0 !important;
+      justify-content: center;
+    }
+
+    .logoPlaceholder h1 {
+      font-family: "Handlee", cursive;
+      font-size: 25px;
+      color: white;
+    }
+
+    .logoPlaceholder h1 {
+      font-family: "Handlee", cursive;
+      font-size: 20px !important;
+      color: white;
+    }
+
+    .tagline {
+      color: white;
+      font-size: 15px !important;
+      width: 150% !important;
+      line-height: 1.6;
+      margin-left: 110px !important;
+      font-family: "Open Sans", sans-serif;
+      font-size: 20px;
+    }
+
+    .list a {
+      color: white;
+      font-family: "Open Sans", sans-serif;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+
+    .colh3 {
+      margin-top: -0px !important;
+      margin-left: 0 !important;
+    }
+
+     .colhp{
+      margin-left: -2px !important;
+    }
+}
+
+@media (max-width: 900px) and (min-width: 800px){
+     .container {
+      grid-template-columns: repeat(3, 1fr);
+      gap: 30px !important;
+    }
+
+    .col:first-child {
+      grid-column: 1 / -1;
+      align-items: center;
+      text-align: center;
+    }
+
+    .col:first-child .tagline {
+      width: 100% !important;
+      margin-left: 0 !important;
+    }
+
+    .socialContainer {
+      margin-left: 0 !important;
+      justify-content: center;
+    }
+
+    .logoPlaceholder h1 {
+      font-family: "Handlee", cursive;
+      font-size: 25px;
+      color: white;
+    }
+
+    .logoPlaceholder h1 {
+      font-family: "Handlee", cursive;
+      font-size: 20px !important;
+      color: white;
+    }
+
+    .tagline {
+      color: white;
+      font-size: 15px !important;
+      width: 150% !important;
+      line-height: 1.6;
+      margin-left: 110px !important;
+      font-family: "Open Sans", sans-serif;
+      font-size: 20px;
+    }
+
+    .list a {
+      color: white;
+      font-family: "Open Sans", sans-serif;
+      text-decoration: none;
+      transition: 0.3s;
+      font-size: 15px;
+    }
+
+    .colh3 {
+      margin-top: -0px !important;
+      margin-left: 0 !important;
+    }
+
+    .col h3{
+       font-size: 15px;
+    }
+
+     .colhp{
+      margin-left: -2px !important;
+    }
+}
+
+@media (max-width: 800px) and (min-width: 755px){
+     .container {
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px !important;
+    }
+
+    .col:first-child {
+      grid-column: 1 / -1;
+      align-items: center;
+      text-align: center;
+    }
+
+    .col:first-child .tagline {
+      width: 100% !important;
+      margin-left: 0 !important;
+    }
+
+    .socialContainer {
+      margin-left: 0 !important;
+      justify-content: center;
+    }
+
+    .logoPlaceholder h1 {
+      font-family: "Handlee", cursive;
+      font-size: 25px;
+      color: white;
+    }
+
+    .logoPlaceholder h1 {
+      font-family: "Handlee", cursive;
+      font-size: 20px !important;
+      color: white;
+    }
+
+    .tagline {
+      color: white;
+      font-size: 15px !important;
+      width: 150% !important;
+      line-height: 1.6;
+      margin-left: 110px !important;
+      font-family: "Open Sans", sans-serif;
+      font-size: 20px;
+    }
+
+    .list a {
+      color: white;
+      font-family: "Open Sans", sans-serif;
+      text-decoration: none;
+      transition: 0.3s;
+      font-size: 15px;
+    }
+
+    .colh3 {
+      margin-top: -0px !important;
+      margin-left: 0 !important;
+    }
+
+    .col h3{
+       font-size: 15px;
+    }
+
+     .colhp{
+      margin-left: -2px !important;
+    }
+}
+
+@media (max-width: 755px) and (min-width: 700px){
+     .container {
+      grid-template-columns: repeat(1, 1fr);
+      gap: 20px !important;
+    }
+
+      .logoPlaceholder h1 {
+      font-family: "Handlee", cursive;
+      font-size: 20px !important;
+      color: white;
+    }
+
+    .tagline {
+      color: white;
+      font-size: 15px !important;
+      width: 100% !important;
+      line-height: 1.6;
+      margin: auto !important;
+      font-family: "Open Sans", sans-serif;
+      font-size: 20px;
+    }
+
+    .col {
+      align-items: flex-start !important;
+      text-align: left !important;
+    }
+
+    .col:first-child {
+      align-items: center !important;
+      text-align: center !important;
+    }
+
+    .list {
+      text-align: left;
+    }
+
+    .list a {
+      display: inline-block;
+      text-align: left;
+    }
+
+    .col h3 {
+      text-align: left;
+    }
+
+     .colh3 {
+      margin-top: -0px !important;
+      margin-left: 0 !important;
+    }
+
+    .col h3{
+       font-size: 15px;
+    }
+
+     .colhp{
+      margin-left: -2px !important;
+    }
+
+    .col p {
+      text-align: left;
+    }
+    .socialContainer {
+      justify-content: flex-start !important;
+      margin-left: -2px !important;
+    }
+}
+
+@media (max-width: 700px) and (min-width: 600px){
+     .container {
+      grid-template-columns: repeat(1, 1fr);
+      gap: 20px !important;
+    }
+
+    .logoPlaceholder h1 {
+      font-family: "Handlee", cursive;
+      font-size: 20px !important;
+      color: white;
+    }
+
+    .tagline {
+      color: white;
+      font-size: 13px !important;
+      width: 100% !important;
+      line-height: 1.6;
+      margin: auto !important;
+      font-family: "Open Sans", sans-serif;
+    }
+
+    .col {
+      align-items: flex-start !important;
+      text-align: left !important;
+    }
+
+    .col:first-child {
+      align-items: center !important;
+      text-align: center !important;
+    }
+
+    .list {
+      text-align: left;
+    }
+
+    .list a {
+      display: inline-block;
+      text-align: left;
+    }
+
+    .col h3 {
+      text-align: left;
+    }
+
+     .colh3 {
+      margin-top: -0px !important;
+      margin-left: 0 !important;
+    }
+
+    .col h3{
+       font-size: 15px;
+    }
+
+     .colhp{
+      margin-left: -2px !important;
+    }
+
+    .col p {
+      text-align: left;
+    }
+    .socialContainer {
+      justify-content: flex-start !important;
+      margin-left: -2px !important;
+    }
+}
+
+@media (max-width: 600px) and (min-width: 500px){
+     .container {
+      grid-template-columns: repeat(1, 1fr);
+      gap: 20px !important;
+    }
+
+    .logoPlaceholder h1 {
+      font-family: "Handlee", cursive;
+      font-size: 20px !important;
+      color: white;
+    }
+
+    .tagline {
+      color: white;
+      font-size: 13px !important;
+      width: 110% !important;
+      line-height: 1.6;
+      margin: auto !important;
+      font-family: "Open Sans", sans-serif;
+    }
+
+    .col {
+      align-items: flex-start !important;
+      text-align: left !important;
+    }
+
+    .col:first-child {
+      align-items: center !important;
+      text-align: center !important;
+    }
+
+    .list {
+      text-align: left;
+    }
+
+    .list a {
+      display: inline-block;
+      text-align: left;
+    }
+
+    .col h3 {
+      text-align: left;
+    }
+
+     .colh3 {
+      margin-top: -0px !important;
+      margin-left: 0 !important;
+    }
+
+    .col h3{
+       font-size: 15px;
+    }
+
+     .colhp{
+      margin-left: -2px !important;
+    }
+
+    .col p {
+      text-align: left;
+    }
+    .socialContainer {
+      justify-content: flex-start !important;
+      margin-left: -2px !important;
+    }
+}
+
+@media (max-width: 500px) and (min-width:400px){
+     .container {
+      grid-template-columns: repeat(1, 1fr);
+      gap: 20px !important;
+    }
+
+    .logoPlaceholder h1 {
+      font-family: "Handlee", cursive;
+      font-size: 20px !important;
+      color: white;
+    }
+
+    .tagline {
+      color: white;
+      font-size: 13px !important;
+      width: 150% !important;
+      line-height: 1.6;
+      margin: auto !important;
+      font-family: "Open Sans", sans-serif;
+    }
+
+    .col {
+      align-items: center !important;
+      text-align: center !important;
+    }
+
+    .col p,
+    .col h3,
+    .list,
+    .list a {
+      text-align: center !important;
+    }
+
+    .tagline {
+      width: 100% !important;
+      margin: 0 auto !important;
+    }
+
+    .socialContainer {
+      justify-content: center !important;
+      margin-left: 0 !important;
+    }
+
+    .colh3,
+    .colhp {
+      margin-left: 0 !important;
+    }
+}
+
+@media (max-width: 400px) and (min-width:320px){
+     .container {
+      grid-template-columns: repeat(1, 1fr);
+      gap: 20px !important;
+    }
+
+    .logoPlaceholder h1 {
+      font-family: "Handlee", cursive;
+      font-size: 20px !important;
+      color: white;
+    }
+
+    .tagline {
+      color: white;
+      font-size: 13px !important;
+      width: 150% !important;
+      line-height: 1.6;
+      margin: auto !important;
+      font-family: "Open Sans", sans-serif;
+    }
+
+    .col {
+      align-items: center !important;
+      text-align: center !important;
+    }
+
+    .col p,
+    .col h3,
+    .list,
+    .list a {
+      text-align: center !important;
+    }
+
+    .tagline {
+      width: 100% !important;
+      margin: 0 auto !important;
+    }
+
+    .socialContainer {
+      justify-content: center !important;
+      margin-left: 0 !important;
+    }
+
+    .colh3,
+    .colhp {
+      margin-left: 0 !important;
+    }
 }

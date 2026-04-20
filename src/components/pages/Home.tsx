@@ -1,6 +1,8 @@
 import { useState, useRef, useEffect } from "react";
+import { Link } from "react-router-dom";
 import img1 from '../../assets/img/img-1.png';
 import styles from "./Home.module.css";
+
 
 import { FaStar } from "react-icons/fa";
 import { IoIosPeople } from "react-icons/io";
@@ -14,72 +16,120 @@ import delfim from '../../assets/img/delfin.png';
 import araujo from '../../assets/img/araujo.png';
 
 const Home = () => {
-      const [formData, setFormData] = useState({
+  const [formData, setFormData] = useState({
+    nome: "",
+    email: "",
+    mensagem: "",
+    telefone: "",
+    curso: "",
+    nivel: "",
+    escola: ""
+  });
+
+  const [errors, setErrors] = useState({
+    nome: "",
+    email: "",
+    mensagem: "",
+    telefone: "",
+    curso: "",
+    nivel: "",
+    escola: ""
+  });
+
+  const handleChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>
+  ) => {
+    const { name, value } = e.target;
+
+    setFormData((prev) => ({
+      ...prev,
+      [name]: value
+    }));
+  };
+
+  const validate = () => {
+    let valid = true;
+
+    let newErrors = {
       nome: "",
       email: "",
-      mensagem: ""
-    });
-
-    const [errors, setErrors] = useState({
-      nome: "",
-      email: "",
-      mensagem: ""
-    });
-
-    const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-      const { name, value } = e.target;
-
-      setFormData((prev) => ({
-        ...prev,
-        [name]: value
-      }));
+      mensagem: "",
+      telefone: "",
+      curso: "",
+      nivel: "",
+      escola: ""
     };
 
-    const validate = () => {
-      let valid = true;
-      let newErrors = { nome: "", email: "", mensagem: "" };
+    if (!formData.nome.trim()) {
+      newErrors.nome = "Nome é obrigatório";
+      valid = false;
+    }
 
-      if (!formData.nome.trim()) {
-        newErrors.nome = "Nome é obrigatório";
-        valid = false;
-      }
+    if (!formData.email.trim()) {
+      newErrors.email = "Email é obrigatório";
+      valid = false;
+    } else if (!/\S+@\S+\.\S+/.test(formData.email)) {
+      newErrors.email = "Email inválido";
+      valid = false;
+    }
 
-      if (!formData.email.trim()) {
-        newErrors.email = "Email é obrigatório";
-        valid = false;
-      } else if (!/\S+@\S+\.\S+/.test(formData.email)) {
-        newErrors.email = "Email inválido";
-        valid = false;
-      }
+    if (!formData.telefone.trim()) {
+      newErrors.telefone = "Telefone é obrigatório";
+      valid = false;
+    }
 
-      if (!formData.mensagem.trim()) {
-        newErrors.mensagem = "Mensagem é obrigatória";
-        valid = false;
-      }
+    if (!formData.curso.trim()) {
+      newErrors.curso = "Selecione um curso";
+      valid = false;
+    }
 
-      setErrors(newErrors);
-      return valid;
-    };
+    if (!formData.nivel.trim()) {
+      newErrors.nivel = "Selecione o nível";
+      valid = false;
+    }
 
-    const handleSubmit = (e: React.FormEvent) => {
-      e.preventDefault();
+    if (!formData.escola.trim()) {
+      newErrors.escola = "Escola é obrigatória";
+      valid = false;
+    }
 
-      if (validate()) {
-        alert("Formulário enviado com sucesso!");
+    if (!formData.mensagem.trim()) {
+      newErrors.mensagem = "Mensagem é obrigatória";
+      valid = false;
+    }
 
-        setFormData({
-          nome: "",
-          email: "",
-          mensagem: ""
-        });
+    setErrors(newErrors);
+    return valid;
+  };
 
-        setErrors({
-          nome: "",
-          email: "",
-          mensagem: ""
-        });
-      }
-    };
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+
+    if (validate()) {
+      alert("Formulário enviado com sucesso!");
+
+      setFormData({
+        nome: "",
+        email: "",
+        mensagem: "",
+        telefone: "",
+        curso: "",
+        nivel: "",
+        escola: ""
+      });
+
+      setErrors({
+        nome: "",
+        email: "",
+        mensagem: "",
+        telefone: "",
+        curso: "",
+        nivel: "",
+        escola: ""
+      });
+    }
+  };
+
 
   const [tempRating, setTempRating] = useState<number>(0); 
   const [rating, setRating] = useState<number>(0);
@@ -111,14 +161,14 @@ const testemunhos = [
   {
     nome: "João Silva",
     aluno: "Aluno de html e css",
-    resumo: "Curso muito bom, aprendi bastante!",
-    detalhe: "O curso de programação mudou completamente minha forma de pensar e hoje já consigo criar meus próprios projetos."
+    resumo: "aprendi bastante!",
+    detalhe: "O curso mudou minha forma de pensar e hoje já consigo criar meus próprios projetos."
   },
   {
     nome: "Maria Santos",
     aluno: "Aluna de Javascript",
     resumo: "Explicações claras e práticas.",
-    detalhe: "Os formadores explicam muito bem e os exemplos são fáceis de entender, recomendo muito!"
+    detalhe: "Os formadores explicam bem e os exemplos são fáceis de entender, recomendo muito!"
   },
   {
     nome: "Carlos Mendes",
@@ -158,7 +208,10 @@ useEffect(() => {
 
         <div className={styles.heroBottom}>
           <div className={styles.heroText}>
-            <p>"Cada jornada começa com orientação e <br /> a tua pode começar agora"</p>
+            <p>
+              "Cada jornada começa <br className={styles.break800}/>com 
+              orientação e <br /> a  tua pode começar agora"
+            </p>
           </div>
 
           <div className={styles.satisfaction}>
@@ -234,9 +287,9 @@ useEffect(() => {
         <div className={styles.coursesgrid}>
           {[
             { title: "Programação Web", text: "Aprenda HTML, CSS. Domine os fundamentos da criação de sites com HTML e CSS.", img: salvador },
-            { title: "JavaScript Básico", text: "Aprenda JavaScript (JS), linguagem de programação usada principalmente para tornar páginas web interativas.", img: cardoso },
-            { title: "Linguagem C", text: "Aprenda os fundamentos da programação com C: variáveis, loops, funções e estrutura de dados.", img: delfim },
-            { title: "Photoshop", text: "Domine técnicas de edição de imagens, design gráfico e criação visual usando o Adobe Photoshop.", img: araujo }
+            { title: "JavaScript Básico", text: "Aprenda JavaScript, linguagem de pro...usada para tornar páginas web interativas.", img: cardoso },
+            { title: "Linguagem C", text: "Aprenda os fundamentos da programação com C: variáveis, loops, funções.", img: delfim },
+            { title: "Photoshop", text: "Domine técnicas de edição de imagens, design gráfico e criação visual usando..", img: araujo }
           ].map((item, index) => (
             <div key={index} className={styles.coursecard}>
               {item.img && (
@@ -248,9 +301,11 @@ useEffect(() => {
           ))}
         </div>
 
-        <div className={styles.moreinfo}>
-          <button className={styles.btnvermais}>Ver Mais</button>
-        </div>
+         <div className={styles.moreinfo}>
+            <Link to="/cursos" className={styles.btnvermais}>
+              Ver Mais
+            </Link>
+          </div>
       </section>
 
        <section className={styles.testemunhossection}>
@@ -310,98 +365,139 @@ useEffect(() => {
           </div>
         </section>
 
-       <section className={styles.contactcontainer}>
+        <section className={styles.contactcontainer}>
           <div className={styles.contactcard}>
-
-            <div className={styles.contactinfo}>
-              <h1 className={styles.title}>Entre em contato</h1>
-
-              <p className={styles.description}>
-                Gostaria de saber mais informações sobre as formações de programação e tecnologia da SC Academy...
-              </p>
-
-              <p className={styles.subtitle}>
-                Entre em contato com nossa equipe através dos canais de atendimento:
-              </p>
-
-              <div className={styles.contactchannels}>
-                <div className={styles.channelitem}>
-                  <div className={styles.iconbox}></div>
-                  <div className={styles.texts}>
-                    <span>Telefone</span>
-                    <strong>952729364</strong>
-                  </div>
-                </div>
-
-                <div className={styles.channelitem}>
-                  <div className={styles.iconbox}></div>
-                  <div className={styles.texts}>
-                    <span>Whatsapp</span>
-                    <strong>(+244) 937039488</strong>
-                  </div>
-                </div>
-
-                <div className={styles.channelitem}>
-                  <div className={styles.iconbox}></div>
-                  <div className={styles.texts}>
-                    <span>E-mail</span>
-                    <strong>contato@scacademy.com</strong>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div className={styles.contactformwrapper}>
-              <form className={styles.glassform} onSubmit={handleSubmit}>
-
-                <div className={styles.inputgroup}>
-                  <label>Nome</label>
-                    <input
-                      type="text"
-                      name="nome"
-                      placeholder="Insira seu nome"
-                      value={formData.nome}
-                      onChange={handleChange}
-                    />
-                    {errors.nome && <span className={styles.error}>{errors.nome}</span>}
-                </div>
-
-                <div className={styles.row}>
-                  <div className={styles.inputgroup}>
-                    <label>E-mail</label>
-                        <input
-                        type="email"
-                        name="email"
-                        placeholder="Insira seu email"
-                        value={formData.email}
-                        onChange={handleChange}
-                      />
-                      {errors.email && <span className={styles.error}>{errors.email}</span>}
-                  </div>
-                </div>
-
-                <div className={styles.inputgroup}>
-                  <label>Mensagem</label>
-                  <textarea
-          name="mensagem"
-          placeholder="Escreva aqui"
-          rows={4}
-          value={formData.mensagem}
-          onChange={handleChange}
-        />
-        {errors.mensagem && <span className={styles.error}>{errors.mensagem}</span>}
-                </div>
-
-                <button type="submit" className={styles.btnsend}>
-                  Enviar
-                </button>
-
-              </form>
-            </div>
-
-          </div>
-        </section>
-     
+              <div className={styles.contactinfo}>
+                  <h1 className={styles.title}>Entre em contato</h1>
+                  <p className={styles.description}>
+                     Gostaria de saber mais informações sobre as formações de programação e tecnologia da SC Academy...
+                  </p>
+    
+                  <p className={styles.subtitle}>
+                     Entre em contato com nossa equipe através dos canais de atendimento:
+                  </p>
+         
+                  <div className={styles.contactchannels}>
+                      <div className={styles.channelitem}>
+                         <div className={styles.iconbox}></div>
+                         <div className={styles.texts}>
+                         <span>Telefone</span>
+                         <strong>952729364</strong>
+                        </div>
+                      </div>
+         
+                      <div className={styles.channelitem}>
+                        <div className={styles.iconbox}></div>
+                        <div className={styles.texts}>
+                          <span>Whatsapp</span>
+                          <strong>(+244) 937039488</strong>
+                        </div>
+                      </div>
+         
+                      <div className={styles.channelitem}>
+                        <div className={styles.iconbox}></div>
+                        <div className={styles.texts}>
+                         <span>E-mail</span>
+                         <strong>contato@scacademy.com</strong>
+                        </div>
+                      </div>
+                   </div>
+                 </div>
+         
+                 <div className={styles.contactformwrapper}>
+                    <form className={styles.glassform} onSubmit={handleSubmit}>
+                     <div className={styles.inputgroup}>
+                       <label>Nome</label>
+                       <input
+                         type="text"
+                         name="nome"
+                         placeholder="Insira seu nome"
+                         value={formData.nome}
+                         onChange={handleChange}
+                       />
+                       {errors.nome && <span className={styles.error}>{errors.nome}</span>}
+                     </div>
+         
+                     <div className={styles.inputgroup}>
+                       <label>E-mail</label>
+                       <input
+                         type="email"
+                         name="email"
+                         placeholder="Insira seu email"
+                         value={formData.email}
+                         onChange={handleChange}
+                       />
+                       {errors.email && <span className={styles.error}>{errors.email}</span>}
+                     </div>
+                     <div className={styles.inputgroup}>
+                       <label>Telefone / WhatsApp</label>
+                       <input
+                         type="text"
+                         name="telefone"
+                         placeholder="Insira seu número"
+                         value={formData.telefone}
+                         onChange={handleChange}
+                       />
+                       {errors.telefone && <span className={styles.error}>{errors.telefone}</span>}
+                     </div>
+                     <div className={styles.inputgroup}>
+                       <label>Curso</label>
+                       <select
+                         name="curso"
+                         value={formData.curso}
+                         onChange={handleChange}
+                       >
+                         <option value="">Selecione o curso</option>
+                         <option value="html">HTML & CSS</option>
+                         <option value="js">JavaScript</option>
+                         <option value="react">React</option>
+                       </select>
+                       {errors.curso && <span className={styles.error}>{errors.curso}</span>}
+                     </div>
+                     <div className={styles.inputgroup}>
+                       <label>Nível</label>
+                       <select
+                         name="nivel"
+                         value={formData.nivel}
+                         onChange={handleChange}
+                       >
+                         <option value="">Selecione o nível</option>
+                         <option value="iniciante">Iniciante</option>
+                         <option value="basico">Básico</option>
+                         <option value="avancado">Avançado</option>
+                       </select>
+                       {errors.nivel && <span className={styles.error}>{errors.nivel}</span>}
+                     </div>
+                     <div className={styles.inputgroup}>
+                       <label>Escola</label>
+                       <input
+                         type="text"
+                         name="escola"
+                         placeholder="Nome da sua escola"
+                         value={formData.escola}
+                         onChange={handleChange}
+                       />
+                       {errors.escola && <span className={styles.error}>{errors.escola}</span>}
+                     </div>
+         
+                     <div className={styles.inputgroup}>
+                       <label>Mensagem</label>
+                       <textarea
+                         name="mensagem"
+                         placeholder="Escreva aqui"
+                         rows={4}
+                         value={formData.mensagem}
+                         onChange={handleChange}
+                       />
+                       {errors.mensagem && <span className={styles.error}>{errors.mensagem}</span>}
+                     </div>
+                     <button type="submit" className={styles.btnsend}>
+                       Enviar
+                     </button>
+                   </form>
+                 </div>
+               </div>
+      </section>
     </>
   );
 };
