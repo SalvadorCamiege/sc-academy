@@ -19,13 +19,14 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  gap: 15px;
+  gap: -60px !important;
 }
 
 .logoPlaceholder h1 {
   font-family: "Handlee", cursive;
   font-size: 25px;
   color: white;
+  margin-bottom: 50px;
 }
 
 .tagline {
@@ -36,18 +37,18 @@
   margin-left: 110px !important;
   font-family: "Open Sans", sans-serif;
   font-size: 20px;
+  margin-top: -20px !important;
 }
 
 .col h3 {
   font-family: "Handlee", cursive;
   font-weight: bold;
   color: #fff;
-  margin-bottom: 10px;
   font-size: 18px;
 }
 
 .colh3{
-  margin-top: 15px;
+  margin-top: -5px;
   margin-left: -100px !important;
 }
 
@@ -184,14 +185,10 @@
 
     .logoPlaceholder h1 {
       font-family: "Handlee", cursive;
-      font-size: 25px;
+      font-size: 25px !important;
       color: white;
-    }
-
-    .logoPlaceholder h1 {
-      font-family: "Handlee", cursive;
-      font-size: 20px !important;
-      color: white;
+      margin-bottom: 30px !important;
+      margin-top: -10px;
     }
 
     .tagline {
@@ -245,14 +242,10 @@
 
     .logoPlaceholder h1 {
       font-family: "Handlee", cursive;
-      font-size: 25px;
+      font-size: 25px !important;
       color: white;
-    }
-
-    .logoPlaceholder h1 {
-      font-family: "Handlee", cursive;
-      font-size: 20px !important;
-      color: white;
+      margin-bottom: 30px !important;
+      margin-top: -10px;
     }
 
     .tagline {
@@ -263,6 +256,22 @@
       margin-left: 110px !important;
       font-family: "Open Sans", sans-serif;
       font-size: 20px;
+    }
+
+    .list a {
+      color: white;
+      font-family: "Open Sans", sans-serif;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+
+    .colh3 {
+      margin-top: -0px !important;
+      margin-left: 0 !important;
+    }
+
+     .colhp{
+      margin-left: -2px !important;
     }
 
     .list a {
@@ -309,16 +318,12 @@
       justify-content: center;
     }
 
-    .logoPlaceholder h1 {
+     .logoPlaceholder h1 {
       font-family: "Handlee", cursive;
-      font-size: 25px;
+      font-size: 25px !important;
       color: white;
-    }
-
-    .logoPlaceholder h1 {
-      font-family: "Handlee", cursive;
-      font-size: 20px !important;
-      color: white;
+      margin-bottom: 30px !important;
+      margin-top: -10px;
     }
 
     .tagline {
@@ -329,6 +334,22 @@
       margin-left: 110px !important;
       font-family: "Open Sans", sans-serif;
       font-size: 20px;
+    }
+
+    .list a {
+      color: white;
+      font-family: "Open Sans", sans-serif;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+
+    .colh3 {
+      margin-top: -0px !important;
+      margin-left: 0 !important;
+    }
+
+     .colhp{
+      margin-left: -2px !important;
     }
 
     .list a {
@@ -359,20 +380,39 @@
       gap: 20px !important;
     }
 
-      .logoPlaceholder h1 {
+    .logoPlaceholder h1 {
       font-family: "Handlee", cursive;
-      font-size: 20px !important;
+      font-size: 25px !important;
       color: white;
+      margin-bottom: 30px !important;
+      margin-top: -10px;
     }
 
     .tagline {
       color: white;
       font-size: 15px !important;
       width: 100% !important;
-      line-height: 1.6;
       margin: auto !important;
+      line-height: 1.6;
       font-family: "Open Sans", sans-serif;
       font-size: 20px;
+      margin-top: -20px !important;
+    }
+
+    .list a {
+      color: white;
+      font-family: "Open Sans", sans-serif;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+
+    .colh3 {
+      margin-top: -0px !important;
+      margin-left: 0 !important;
+    }
+
+     .colhp{
+      margin-left: -2px !important;
     }
 
     .col {
@@ -426,19 +466,35 @@
       gap: 20px !important;
     }
 
-    .logoPlaceholder h1 {
+     .logoPlaceholder h1 {
       font-family: "Handlee", cursive;
-      font-size: 20px !important;
+      font-size: 25px !important;
       color: white;
+      margin-bottom: 30px !important;
+      margin-top: -10px;
     }
 
     .tagline {
       color: white;
-      font-size: 13px !important;
+      font-size: 15px !important;
       width: 100% !important;
-      line-height: 1.6;
       margin: auto !important;
+      line-height: 1.6;
       font-family: "Open Sans", sans-serif;
+      font-size: 20px;
+      margin-top: -20px !important;
+    }
+
+    .list a {
+      color: white;
+      font-family: "Open Sans", sans-serif;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+
+    .colh3 {
+      margin-top: -0px !important;
+      margin-left: 0 !important;
     }
 
     .col {
@@ -494,22 +550,34 @@
 
     .logoPlaceholder h1 {
       font-family: "Handlee", cursive;
-      font-size: 20px !important;
+      font-size: 25px !important;
       color: white;
+      margin-bottom: 30px !important;
+      margin-top: -10px;
     }
 
     .tagline {
       color: white;
-      font-size: 13px !important;
-      width: 110% !important;
-      line-height: 1.6;
+      font-size: 15px !important;
+      width: 100% !important;
       margin: auto !important;
+      line-height: 1.6;
       font-family: "Open Sans", sans-serif;
+      font-size: 20px;
+      text-align: justify !important;
+      margin-top: -20px !important;
     }
 
-    .col {
-      align-items: flex-start !important;
-      text-align: left !important;
+    .list a {
+      color: white;
+      font-family: "Open Sans", sans-serif;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+
+    .colh3 {
+      margin-top: -0px !important;
+      margin-left: 0 !important;
     }
 
     .col:first-child {
@@ -560,22 +628,34 @@
 
     .logoPlaceholder h1 {
       font-family: "Handlee", cursive;
-      font-size: 20px !important;
+      font-size: 25px !important;
       color: white;
+      margin-bottom: 30px !important;
+      margin-top: -10px;
     }
 
     .tagline {
       color: white;
-      font-size: 13px !important;
-      width: 150% !important;
+      font-size: 15px !important;
+      width: 130% !important;
+      margin-left: 7px !important;
       line-height: 1.6;
-      margin: auto !important;
       font-family: "Open Sans", sans-serif;
+      font-size: 20px;
+      text-align: justify !important;
+      margin-top: -25px !important;
     }
 
-    .col {
-      align-items: center !important;
-      text-align: center !important;
+    .list a {
+      color: white;
+      font-family: "Open Sans", sans-serif;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+
+    .colh3 {
+      margin-top: -0px !important;
+      margin-left: 0 !important;
     }
 
     .col p,
@@ -583,11 +663,6 @@
     .list,
     .list a {
       text-align: center !important;
-    }
-
-    .tagline {
-      width: 100% !important;
-      margin: 0 auto !important;
     }
 
     .socialContainer {
@@ -611,20 +686,32 @@
       font-family: "Handlee", cursive;
       font-size: 20px !important;
       color: white;
+      margin-bottom: 30px !important;
+      margin-top: -10px;
     }
 
     .tagline {
       color: white;
-      font-size: 13px !important;
-      width: 150% !important;
+      font-size: 14px !important;
+      width: 155% !important;
+      margin-left: 7px !important;
       line-height: 1.6;
-      margin: auto !important;
       font-family: "Open Sans", sans-serif;
+      font-size: 20px;
+      text-align: justify !important;
+      margin-top: -25px !important;
     }
 
-    .col {
-      align-items: center !important;
-      text-align: center !important;
+    .list a {
+      color: white;
+      font-family: "Open Sans", sans-serif;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+
+    .colh3 {
+      margin-top: -0px !important;
+      margin-left: 0 !important;
     }
 
     .col p,
@@ -632,11 +719,6 @@
     .list,
     .list a {
       text-align: center !important;
-    }
-
-    .tagline {
-      width: 100% !important;
-      margin: 0 auto !important;
     }
 
     .socialContainer {

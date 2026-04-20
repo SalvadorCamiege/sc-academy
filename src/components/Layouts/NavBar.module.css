@@ -388,7 +388,13 @@
         width: 80%;
         max-width: 1200px;
     }
-    
+
+    .logo img {
+        height: 100px;
+        font-family: "Open Sans", sans-serif;
+        width: 100%;
+    }
+        
     .menuToggle {
         display: flex;
         flex-direction: column;
@@ -442,6 +448,12 @@
         justify-content: space-between;
         width: 80%;
         max-width: 1200px;
+    }
+
+    .logo img {
+        height: 100px;
+        font-family: "Open Sans", sans-serif;
+        width: 100% !important
     }
     
     .menuToggle {

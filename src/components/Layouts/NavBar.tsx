@@ -6,9 +6,7 @@ import Container from './Container';
 import logo from '../../assets/logo/logo.png';
 
 function NavBar() {
-
     const [menuOpen, setMenuOpen] = useState(false);
-
     return (
         <nav className={styles.NavBar}>
             <Container>

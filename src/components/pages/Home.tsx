@@ -130,7 +130,6 @@ const Home = () => {
     }
   };
 
-
   const [tempRating, setTempRating] = useState<number>(0); 
   const [rating, setRating] = useState<number>(0);
   const [submitted, setSubmitted] = useState<boolean>(false);
@@ -195,7 +194,6 @@ useEffect(() => {
   return () => clearInterval(interval);
 }, []);
   
-
   return (
     <>
       <section className={styles.heroSection}>

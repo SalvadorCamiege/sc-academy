@@ -150,6 +150,7 @@
   font-family: "Handlee", cursive;
   color: white;
   margin-bottom: 15px;
+  margin-top: -20px;
 }
 
 .statsparagrafo p {
@@ -219,9 +220,10 @@
   font-family: "Handlee", cursive;
   border-top: none;
   font-weight: bold;
-  margin-top: -70px;
+  margin-top: -40px;
   margin-bottom: 30px;
   text-align: center;
+  color: white;
 }
 
 .coursesheader p {
@@ -324,6 +326,7 @@
     font-size: 35px;
     font-family: "Handlee", cursive;
     font-weight: bold;
+    margin-bottom: -20px;
 }
 
 .testemunhossection h3{
@@ -1245,6 +1248,13 @@
     }
     /* fim da segunda parte */
     /*Terceira parte*/
+    .coursessection {
+      background: linear-gradient(90deg, #01133F, #022a7a);
+      color: white;
+      padding: 4rem 1.5rem;
+      position: relative;
+      clip-path: polygon(0 0, 100% 0, 100% 93%, 0 100%);
+    }
     .coursesheader h1 {
       font-size: 30px;
       font-family: "Handlee", cursive;
@@ -1597,6 +1607,7 @@
   .heroTop {
     margin-top: 100px;
     text-align: center;
+    width: 100% !important;
     margin-bottom: 3rem;
   }
 
@@ -1701,7 +1712,6 @@
     font-weight: bold;
     font-family: "Open Sans", sans-serif;
   }
-
    /* segundo home */
     .start1 {
       padding: 90px 80px;
@@ -1772,6 +1782,13 @@
     }
     /* fim da segunda parte */
     /*Terceira parte*/
+     .coursessection {
+      background: linear-gradient(90deg, #01133F, #022a7a);
+      color: white;
+      padding: 4rem 1.5rem;
+      position: relative;
+      clip-path: polygon(0 0, 100% 0, 100% 94%, 0 100%);
+    }
     .coursesheader h1 {
       font-size: 30px;
       font-family: "Handlee", cursive;
@@ -2127,6 +2144,7 @@
 
   .heroTop {
     margin-top: 100px;
+    width: 100% !important;
     text-align: center;
     margin-bottom: 3rem;
   }
@@ -2152,7 +2170,7 @@
     height: 600px;
     background: radial-gradient(circle, #1e88e5 0%, #1565c0 70%);
     border-radius: 80%;
-    top: 80px; 
+    top: 130px; 
     z-index: 0;
   }
 
@@ -2163,7 +2181,7 @@
     height: 650px;
     background: radial-gradient(circle, rgba(30,136,229,0.3) 0%, transparent 70%);
     border-radius: 80%;
-    top: 120px; 
+    top: 190px !important; 
     z-index: 0;
   }
 
@@ -2171,6 +2189,7 @@
     max-width: 360px;
     width: 100% !important;
     height: auto;
+    margin-top: 30px !important;
     position: relative;
     z-index: 1;
 
@@ -2320,7 +2339,7 @@
       color: white;
       padding: 4rem 1.5rem;
       position: relative;
-      clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+      clip-path: polygon(0 0, 100% 0, 100% 93%, 0 100%);
     }
     .coursesheader h1 {
       font-size: 25px;
@@ -2715,7 +2734,7 @@
   .heroSection {
     background: linear-gradient(90deg, #01133F, #022a7a);
     color: white;
-    height: 80vh; 
+    height: 100vh !important;
     padding: 4rem 2rem;
     font-family: sans-serif;
     overflow: hidden;
@@ -2725,7 +2744,7 @@
   } 
 
   .heroTop {
-    margin-top: 60px;
+    margin-top: 100px;
     text-align: center;
     margin-bottom: 2rem;
   }
@@ -2748,11 +2767,11 @@
   .imageWrapper::before {
     content: "";
     position: absolute;
-    width: 400px;
-    height: 400px;
+    width: 500px;
+    height: 400x;
     background: radial-gradient(circle, #1e88e5 0%, #1565c0 70%);
-    border-radius: 80%;
-    top: 130px; 
+    border-radius: 80% !important;
+    top: 200px !important;
     z-index: 0;
   }
 
@@ -2760,11 +2779,10 @@
     content: "";
     position: absolute;
     width: 450px;
-    height: 450px;
+    height: 500px !important;
     background: radial-gradient(circle, rgba(30,136,229,0.3) 0%, transparent 70%);
-    border-radius: 80%;
-    top: 90px !important; 
-    z-index: 0;
+    border-radius: 50% !important;
+    top: 360px !important;
   }
 
   .imageWrapper img {
@@ -2772,7 +2790,7 @@
     width: 100%;
     height: auto;
     transform: translateY(90px);
-
+    top: 50px !important;
     position: relative;
     z-index: 1;
   }
@@ -2787,9 +2805,9 @@
   }
 
   .heroText {
-    max-width: 420px;
+    max-width: 100% !important;
     font-family: "Open Sans", sans-serif;
-    margin-top: 30px;
+    margin-top: 10px;
   }
 
   .heroText p {
@@ -2824,7 +2842,6 @@
     font-size: 1.4rem;
     cursor: pointer;
   }
-
     /* segundo home */
     .start1 {
       padding: 90px 80px;
@@ -2900,7 +2917,7 @@
       color: white;
       padding: 4rem 1.5rem;
       position: relative;
-      clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+      clip-path: polygon(0 0, 100% 0, 100% 94%, 0 100%);
     }
     .coursesheader h1 {
       font-size: 25px;
@@ -3209,7 +3226,7 @@
   .heroSection {
     background: linear-gradient(90deg, #01133F, #022a7a);
     color: white;
-    height: 80vh; 
+    height: 100vh;
     padding: 4rem 2rem;
     font-family: sans-serif;
     overflow: hidden;
@@ -3227,7 +3244,7 @@
   .heroTop h1 {
     font-family: "Handlee", cursive;
     font-size: 25px;
-    margin-top: -10px;
+    margin-top: 50px !important;
     margin-bottom: 1.5rem;
   }
 
@@ -3239,14 +3256,13 @@
     margin-bottom: 2rem;
   }
 
-  .imageWrapper::before {
+   .imageWrapper::before {
     content: "";
     position: absolute;
-    width: 400px;
-    height: 400px;
+    width: 450px !important;
     background: radial-gradient(circle, #1e88e5 0%, #1565c0 70%);
-    border-radius: 80%;
-    top: 160px; 
+    border-radius: 80% !important;
+    top: 250px !important;
     z-index: 0;
   }
 
@@ -3254,11 +3270,10 @@
     content: "";
     position: absolute;
     width: 450px;
-    height: 450px;
+    height: 500px !important;
     background: radial-gradient(circle, rgba(30,136,229,0.3) 0%, transparent 70%);
-    border-radius: 80%;
-    top: 70px; 
-    z-index: 0;
+    border-radius: 50% !important;
+    top: 360px !important;
   }
 
   .imageWrapper img {
@@ -3266,7 +3281,7 @@
     width: 100%;
     height: auto;
     transform: translateY(90px);
-
+    top: 80px !important;
     position: relative;
     z-index: 1;
   }
@@ -3393,7 +3408,7 @@
       color: white;
       padding: 4rem 1.5rem;
       position: relative;
-      clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+      clip-path: polygon(0 0, 100% 0, 100% 96%, 0 100%);
     }
     .coursesheader h1 {
       font-size: 25px;
@@ -3727,7 +3742,7 @@
   .heroSection {
     background: linear-gradient(90deg, #01133F, #022a7a);
     color: white;
-    height: 80vh; 
+    height: 100vh !important;
     padding: 4rem 2rem;
     font-family: sans-serif;
     overflow: hidden;
@@ -3760,34 +3775,33 @@
   .imageWrapper::before {
     content: "";
     position: absolute;
-    width: 350px;
-    height: 400px;
+    width: 350px !important;
     background: radial-gradient(circle, #1e88e5 0%, #1565c0 70%);
-    border-radius: 80%;
-    top: 160px; 
+    border-radius: 80% !important;
+    top: 220px !important;
     z-index: 0;
   }
 
   .imageWrapper::after {
     content: "";
     position: absolute;
-    width: 400px;
-    height: 450px;
+    width: 450px;
+    height: 500px !important;
     background: radial-gradient(circle, rgba(30,136,229,0.3) 0%, transparent 70%);
-    border-radius: 80%;
-    top: 90px !important; 
-    z-index: 0;
+    border-radius: 50% !important;
+    top: 360px !important;
   }
 
   .imageWrapper img {
     max-width: 300px;
-    width: 100% !important;
+    width: 95% !important;
     height: auto;
-    transform: translateY(100px);
+    transform: translateY(90px);
+    top: 70px !important;
     position: relative;
     z-index: 1;
   }
-
+  
   .heroBottom {
     display: flex;
     flex-direction: column;
@@ -3835,7 +3849,6 @@
     font-size: 1.2rem;
     cursor: pointer;
   }
-
     /* segundo home */
     .start1 {
       padding: 90px 80px;
@@ -3911,7 +3924,7 @@
       color: white;
       padding: 4rem 1.5rem;
       position: relative;
-      clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+      clip-path: polygon(0 0, 100% 0, 100% 96%, 0 100%);
     }
      .coursesheader h1 {
       font-size: 25px;
@@ -4244,7 +4257,7 @@
   .heroSection {
     background: linear-gradient(90deg, #01133F, #022a7a);
     color: white;
-    height: 80vh; 
+    height: 100vh !important;
     padding: 4rem 2rem;
     font-family: sans-serif;
     overflow: hidden;
@@ -4274,14 +4287,13 @@
     margin-bottom: 2rem;
   }
 
-  .imageWrapper::before {
+   .imageWrapper::before {
     content: "";
     position: absolute;
-    width: 350px;
-    height: 400px;
+    width: 370px !important;
     background: radial-gradient(circle, #1e88e5 0%, #1565c0 70%);
-    border-radius: 80%;
-    top: 160px; 
+    border-radius: 80% !important;
+    top: 220px !important;
     z-index: 0;
   }
 
@@ -4289,18 +4301,18 @@
     content: "";
     position: absolute;
     width: 450px;
-    height: 450px;
+    height: 500px !important;
     background: radial-gradient(circle, rgba(30,136,229,0.3) 0%, transparent 70%);
-    border-radius: 80%;
-    top: 70px; 
-    z-index: 0;
+    border-radius: 50% !important;
+    top: 360px !important;
   }
 
   .imageWrapper img {
     max-width: 300px;
-    width: 100%;
+    width: 90% !important;
     height: auto;
-    transform: translateY(130px);
+    transform: translateY(90px);
+    top: 80px !important;
     position: relative;
     z-index: 1;
   }
@@ -4317,7 +4329,7 @@
   .heroText {
     max-width: 420px;
     font-family: "Open Sans", sans-serif;
-    margin-top: 30px;
+    margin-top: 50px !important;
   }
 
   .heroText p {
@@ -4427,7 +4439,7 @@
       color: white;
       padding: 4rem 1.5rem;
       position: relative;
-      clip-path: polygon(0 0, 100% 0, 100% 95%, 0 100%);
+      clip-path: polygon(0 0, 100% 0, 100% 97%, 0 100%);
     }
      .coursesheader h1 {
       font-size: 25px;
@@ -4761,7 +4773,7 @@
   .heroSection {
     background: linear-gradient(90deg, #01133F, #022a7a);
     color: white;
-    height: 80vh; 
+    height: 100vh !important;
     padding: 4rem 2rem;
     font-family: sans-serif;
     overflow: hidden;
@@ -4798,30 +4810,29 @@
   .imageWrapper::before {
     content: "";
     position: absolute;
-    width: 300px !important;
-    height: 400px;
+    width: 310px !important;
     background: radial-gradient(circle, #1e88e5 0%, #1565c0 70%);
-    border-radius: 80%;
-    top: 160px; 
+    border-radius: 80% !important;
+    top: 240px !important;
     z-index: 0;
   }
 
   .imageWrapper::after {
     content: "";
     position: absolute;
-    width: 300px;
-    height: 400px;
-    background: radial-gradient(circle, rgba(30,136,229,0.3) 0%, transparent 30%) !important;
-    border-radius: 80%;
-    top: 50px; 
-    z-index: 0;
+    width: 450px;
+    height: 500px !important;
+    background: radial-gradient(circle, rgba(30,136,229,0.3) 0%, transparent 70%);
+    border-radius: 50% !important;
+    top: 360px !important;
   }
 
   .imageWrapper img {
     max-width: 300px;
-    width: 100%;
+    width: 90% !important;
     height: auto;
-    transform: translateY(130px);
+    transform: translateY(90px);
+    top: 100px !important;
     position: relative;
     z-index: 1;
   }
@@ -4838,7 +4849,7 @@
   .heroText {
     max-width: 420px;
     font-family: "Open Sans", sans-serif;
-    margin-top: 70px !important;
+    margin-top: 105px !important;
   }
 
   .heroText p {
@@ -4884,5 +4895,13 @@
         outline: none;
         transition: all 0.3s ease;
         font-family: "Open Sans", sans-serif;
-      }
+  }
+
+   .coursessection {
+      background: linear-gradient(90deg, #01133F, #022a7a);
+      color: white;
+      padding: 4rem 1.5rem;
+      position: relative;
+      clip-path: polygon(0 0, 100% 0, 100% 98%, 0 100%);
+    }
 }

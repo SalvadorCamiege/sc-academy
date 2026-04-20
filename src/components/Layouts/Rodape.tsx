@@ -20,7 +20,7 @@ const Footer = () => {
           <h3>Navegação</h3>
           <ul className={styles.list}>
             <li><Link to="/">Home</Link></li>
-            <li><Link to="/projectos">Sobre</Link></li>
+            <li><Link to="/sobre">Sobre</Link></li>
             <li><Link to="/cursos">Cursos</Link></li>
           </ul>
         </div>
