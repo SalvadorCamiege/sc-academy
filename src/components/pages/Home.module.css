@@ -199,7 +199,6 @@
   font-family: "Handlee", cursive;
   border-top: none;
   font-weight: bold;
-  margin-top: -40px;
   margin-bottom: 30px;
   text-align: center;
   color: white;
@@ -4495,7 +4494,7 @@
       font-size: 20px;
       font-family: "Handlee", cursive;
       color: white;
-      margin-top: -90px !important;
+      margin-top: -130px !important;
       margin-bottom: 15px;
     }
 
@@ -4949,7 +4948,7 @@
       font-size: 20px;
       font-family: "Handlee", cursive;
       color: white;
-      margin-top: -90px !important;
+      margin-top: -130px !important;
       margin-bottom: 15px;
     }
 
