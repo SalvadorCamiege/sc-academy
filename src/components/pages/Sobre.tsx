@@ -88,6 +88,13 @@ function Sobre() {
       title: "Projetos de Construção Civil",
       text: "Plantas profissionais.",
       desc: "Desenvolvemos projetos completos de construção civil e plantas de residências, incluindo layout arquitetônico, dimensionamento de espaços e orientação técnica. Ajudamos na criação de projetos modernos, funcionais e bem estruturados, garantindo melhor aproveitamento do terreno e alinhamento com as necessidades do cliente."
+    },
+
+    {
+      img: icon7,
+      title: "Projetos de Construção Civil",
+      text: "Plantas profissionais.",
+      desc: "Desenvolvemos projetos completos de construção civil e plantas de residências, incluindo layout arquitetônico, dimensionamento de espaços e orientação técnica. Ajudamos na criação de projetos modernos, funcionais e bem estruturados, garantindo melhor aproveitamento do terreno e alinhamento com as necessidades do cliente."
     }
   ];
 
@@ -155,7 +162,6 @@ function Sobre() {
 
      <section className={styles.scStatsSection}>
         <div className={styles.scStatsContainer}>
-          
           <div className={styles.scStatsLeft}>
             <h1>Metas e Progresso</h1>
             <p>

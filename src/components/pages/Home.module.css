@@ -129,7 +129,7 @@
   font-family: "Handlee", cursive;
   color: white;
   margin-bottom: 15px;
-  margin-top: -90px !important;
+  margin-top: -50px !important;
 }
 
 .statsparagrafo p {
@@ -201,6 +201,7 @@
   font-weight: bold;
   margin-bottom: 30px;
   text-align: center;
+  margin-top: -10px !important;
   color: white;
 }
 
@@ -259,7 +260,6 @@
   font-family: "Open Sans", sans-serif;
   font-weight: bold;
   margin-bottom: 0.5rem;
-  margin-top: -50px !important;
   color: white;
 }
 
@@ -1751,7 +1751,6 @@
    .heroSection {
     background: linear-gradient(90deg, #01133F, #022a7a);
     color: white;
-    height: 100vh;
     padding: 4.8rem;
     font-family: sans-serif;
     overflow: hidden;
@@ -1947,7 +1946,7 @@
       font-family: "Handlee", cursive;
       color: white;
       font-weight: bold;
-      margin-top: -10px;
+      margin-top: -70px !important;
       margin-bottom: 30px;
       text-align: center;
     }
@@ -2289,7 +2288,6 @@
    .heroSection {
       background: linear-gradient(90deg, #01133F, #022a7a);
       color: white;
-      height: 100vh;
       padding: 4.8rem;
       font-family: sans-serif;
       overflow: hidden;
@@ -2887,8 +2885,7 @@
   .heroSection {
     background: linear-gradient(90deg, #01133F, #022a7a);
     color: white;
-    height: 110vh !important;
-    padding: 4rem 2rem;
+    padding: 110px 60px !important;
     font-family: sans-serif;
     overflow: hidden;
     display: flex;
@@ -2932,9 +2929,9 @@
       width: 170%;
       height: 3px;
       background: #02C8F0;
-      bottom: 0;
+      bottom: -0;
+      top: 135% !important;
       left: 50%;
-      top: 540px;
       transform: translateX(-50%);
     }
  
@@ -2987,7 +2984,7 @@
   }
     /* segundo home */
     .start1 {
-      padding: 90px 60px;
+      padding: 40px 20px;
       background: linear-gradient(90deg, #01133F, #022a7a);
       text-align: center;
       border-top: none;
@@ -2998,7 +2995,7 @@
       font-size: 30px;
       font-family: "Handlee", cursive;
       color: white;
-      margin-top: -40px !important;
+      margin-top: 20px !important;
       margin-bottom: 15px;
     }
 
@@ -3370,8 +3367,7 @@
   .heroSection {
     background: linear-gradient(90deg, #01133F, #022a7a);
     color: white;
-    height: 110vh !important;
-    padding: 4rem 2rem;
+    padding: 150px 70px !important;
     font-family: sans-serif;
     overflow: hidden;
     display: flex;
@@ -3380,7 +3376,7 @@
   } 
 
   .heroTop {
-    margin-top: 100px;
+    margin-top: 50px;
     text-align: center;
     margin-bottom: 2rem;
   }
@@ -3388,7 +3384,7 @@
   .heroTop h1 {
     font-family: "Handlee", cursive;
     font-size: 25px;
-    margin-top: -10px;
+    margin-top: -20px;
     margin-bottom: 1.5rem;
   }
 
@@ -3415,9 +3411,9 @@
       width: 130%;
       height: 3px;
       background: #02C8F0;
-      bottom: 0;
+      bottom: -0;
+      top: 135% !important;
       left: 50%;
-      top: 540px;
       transform: translateX(-50%);
     }
  
@@ -3470,7 +3466,7 @@
   }
     /* segundo home */
     .start1 {
-      padding: 90px 80px;
+      padding: 40px 20px;
       background: linear-gradient(90deg, #01133F, #022a7a);
       text-align: center;
       border-top: none;
@@ -3481,7 +3477,7 @@
       font-size: 25px;
       font-family: "Handlee", cursive;
       color: white;
-      margin-top: -40px !important;
+      margin-top: -70px !important;
       margin-bottom: 15px;
     }
 
@@ -3874,12 +3870,31 @@
       }
 }
 
+@media (max-width: 555px) and (min-width: 500px) {
+  
+    /* segundo home */
+    .start1 {
+      padding: 40px 20px;
+      background: linear-gradient(90deg, #01133F, #022a7a);
+      text-align: center;
+      border-top: none;
+      font-family: Arial, sans-serif;
+    }
+
+    .statsparagrafo h1 {
+      font-size: 25px;
+      font-family: "Handlee", cursive;
+      color: white;
+      margin-top: -43px !important;
+      margin-bottom: 15px;
+    }
+}
+
 @media (max-width: 500px) and (min-width: 400px) {
-   .heroSection {
+    .heroSection {
     background: linear-gradient(90deg, #01133F, #022a7a);
     color: white;
-    height: 110vh !important;
-    padding: 4rem 2rem;
+    padding: 150px 70px !important;
     font-family: sans-serif;
     overflow: hidden;
     display: flex;
@@ -3888,7 +3903,7 @@
   } 
 
   .heroTop {
-    margin-top: 100px;
+    margin-top: 50px;
     text-align: center;
     margin-bottom: 2rem;
   }
@@ -3896,7 +3911,7 @@
   .heroTop h1 {
     font-family: "Handlee", cursive;
     font-size: 20px;
-    margin-top: -10px;
+    margin-top: -30px;
     margin-bottom: 1.5rem;
   }
 
@@ -3905,27 +3920,24 @@
      display: inline-block;
   }
 
-    .imageWrapper img {
-      display: block;
-      max-width: 300px;
-      width: 100%;
-      height: auto;
-      transform: translateY(90px);
-      top: 50px !important;
-      position: relative;
-      z-index: 1;
-      width: 100%;
-    }
+   .imageWrapper img {
+    width: 230px;      
+    height: auto;
+    position: relative;
+    top: 150px !important;
+    transform: none !important;
+    z-index: 1;
+  }
 
     .imageWrapper::after {
       content: "";
       position: absolute;
-      width: 110%;
+      width: 150%;
       height: 3px;
       background: #02C8F0;
-      bottom: 0;
+      bottom: -0;
+      top: 149% !important;
       left: 50%;
-      top: 540px;
       transform: translateX(-50%);
     }
  
@@ -3941,7 +3953,7 @@
   .heroText {
     max-width: 100% !important;
     font-family: "Open Sans", sans-serif;
-    margin-top: 30px;
+    margin-top: 140px;
   }
 
   .heroText p {
@@ -3973,12 +3985,12 @@
 
   .star {
     color: #ccc;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     cursor: pointer;
   }
     /* segundo home */
     .start1 {
-      padding: 90px 80px;
+      padding: 30px 20px;
       background: linear-gradient(90deg, #01133F, #022a7a);
       text-align: center;
       border-top: none;
@@ -3986,10 +3998,10 @@
     }
 
     .statsparagrafo h1 {
-      font-size: 25px;
+      font-size: 20px;
       font-family: "Handlee", cursive;
       color: white;
-      margin-top: -60px;
+      margin-top: -170px !important;
       margin-bottom: 15px;
     }
 
@@ -4381,12 +4393,21 @@
       }
 }
 
+@media (max-width: 473px) and (min-width: 400px){
+    .statsparagrafo h1 {
+      font-size: 20px;
+      font-family: "Handlee", cursive;
+      color: white;
+      margin-top: -140px !important;
+      margin-bottom: 15px;
+    }
+}
+
 @media (max-width: 400px) and (min-width: 320px) {
  .heroSection {
     background: linear-gradient(90deg, #01133F, #022a7a);
     color: white;
-    height: 115vh !important;
-    padding: 4rem 2rem;
+    padding: 150px 70px !important;
     font-family: sans-serif;
     overflow: hidden;
     display: flex;
@@ -4395,15 +4416,15 @@
   } 
 
   .heroTop {
-    margin-top: 100px;
+    margin-top: 50px;
     text-align: center;
     margin-bottom: 2rem;
   }
 
   .heroTop h1 {
     font-family: "Handlee", cursive;
-    font-size: 20px;
-    margin-top: -10px;
+    font-size: 15px;
+    margin-top: -30px;
     margin-bottom: 1.5rem;
   }
 
@@ -4412,27 +4433,24 @@
      display: inline-block;
   }
 
-    .imageWrapper img {
-      display: block;
-      max-width: 300px;
-      width: 100%;
-      height: auto;
-      transform: translateY(90px);
-      top: 50px !important;
-      position: relative;
-      z-index: 1;
-      width: 100%;
-    }
+   .imageWrapper img {
+    width: 230px;      
+    height: auto;
+    position: relative;
+    top: 150px !important;
+    transform: none !important;
+    z-index: 1;
+  }
 
     .imageWrapper::after {
       content: "";
       position: absolute;
-      width: 110%;
+      width: 120%;
       height: 3px;
       background: #02C8F0;
-      bottom: 0;
+      bottom: -0;
+      top: 149% !important;
       left: 50%;
-      top: 540px;
       transform: translateX(-50%);
     }
  
@@ -4448,11 +4466,11 @@
   .heroText {
     max-width: 100% !important;
     font-family: "Open Sans", sans-serif;
-    margin-top: 50px;
+    margin-top: 140px;
   }
 
   .heroText p {
-    font-size: 12px;
+    font-size: 13px;
     color: white;
     font-weight: bold;
   }
@@ -4470,6 +4488,7 @@
     color: white;
     font-weight: bold;
   }
+
   .stars {
     display: flex;
     gap: 0.3rem;
@@ -4479,12 +4498,12 @@
 
   .star {
     color: #ccc;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     cursor: pointer;
   }
     /* segundo home */
     .start1 {
-      padding: 90px 80px;
+      padding: 30px 20px;
       background: linear-gradient(90deg, #01133F, #022a7a);
       text-align: center;
       border-top: none;
@@ -4495,10 +4514,9 @@
       font-size: 20px;
       font-family: "Handlee", cursive;
       color: white;
-      margin-top: -65px !important;
+      margin-top: -180px !important;
       margin-bottom: 15px;
     }
-
     .statsparagrafo p {
       max-width: 900px;
       font-family: "Open Sans", sans-serif;
@@ -4889,70 +4907,6 @@
 }
 
 @media (max-width: 360px) and (min-width: 320px){
-  .heroSection {
-    background: linear-gradient(90deg, #01133F, #022a7a);
-    color: white;
-    height: 100vh !important;
-    padding: 4rem 2rem;
-    font-family: sans-serif;
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  } 
-   .imageWrapper {
-    position: relative;
-    display: flex;
-    justify-content: center;
-  }
-
-  .imageWrapper img {
-    width: 230px;      
-    height: auto;
-    position: relative;
-    top: 150px !important;
-    transform: none !important;
-    z-index: 1;
-  }
-
-  .imageWrapper::after {
-      content: "";
-      position: absolute;
-      width: 100%;
-      height: 3px;
-      background: #02C8F0;
-      bottom: 0;
-      left: 50%;
-      top: 456px;
-      transform: translateX(-50%);
-    }
-
-  .heroText p {
-    max-width: 100% !important;
-    font-family: "Open Sans", sans-serif;
-    margin-top: 100px !important ;
-  }
-   .heroText p {
-    max-width: 100% !important;
-    font-family: "Open Sans", sans-serif;
-   
-  }
-  
-  .stars {
-    display: flex;
-    gap: 0.3rem;
-    margin-top: 0.5rem;
-    z-index: 3;
-  }
-
-    .statsparagrafo h1 {
-      font-size: 20px;
-      font-family: "Handlee", cursive;
-      color: white;
-      margin-top: -65px !important;
-      margin-bottom: 15px;
-    }
-
   .star {
     color: #ccc;
     font-size: 1.2rem;

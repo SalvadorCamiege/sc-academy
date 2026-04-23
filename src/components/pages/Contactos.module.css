@@ -9,6 +9,7 @@
 .contactcard {
   position: relative;
   width: 100%;
+  top: -25px !important;
   max-width: 1100px;
   min-height: 600px;
   border-radius: 40px;
@@ -19,7 +20,7 @@
   background-position: center;
   box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
   margin-top: 160px;
-  margin-bottom: 80px;
+  margin-bottom: 30px;
 }
 
 .contactinfo {
@@ -243,15 +244,15 @@
       margin: auto;
       min-height: 100vh;
       padding: 20px;
-      margin-top: -70px !important;
-      margin-bottom: 10px !important;
+      margin-bottom: -50px !important;
     }
 
     .contactcard {
       position: relative;
       width: 100%;
+      top: -20px !important;
       max-width: 1000px;
-      min-height: 600px;
+      min-height: 700px;
       border-radius: 40px;
       overflow: hidden;
       display: flex;
@@ -274,6 +275,7 @@
       font-size: 30px;
       font-weight: bold;
       color: white;
+      margin-top: -5px !important;
       font-family: "Handlee", cursive;
       margin-bottom: 20px;
       font-weight: 700;
@@ -293,6 +295,7 @@
       font-size: 15px;
       font-family: "Open Sans", sans-serif;
       margin-bottom: 25px;
+      margin-top: -20px !important;
       color: white;
     }
 
@@ -329,20 +332,6 @@
       font-family: "Open Sans", sans-serif;
     }
     /* Lado Direito - Formulário Glass */
-    .contactcard {
-      position: relative;
-      width: 100%;
-      max-width: 1100px;
-      min-height: 40vh !important;
-      border-radius: 40px;
-      overflow: hidden;
-      display: flex;
-      background: linear-gradient(to right, rgba(11, 23, 61, 0.95), rgba(11, 23, 61, 0.4)), url('../../assets/img/contato.jpg');
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-position: center;
-      box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
-    }
    .contactformwrapper {
         flex: 1;
         display: flex;
@@ -350,6 +339,7 @@
         justify-content: center;
         padding: 40px;
         z-index: 2;
+        margin-top: -20px !important;
     }
 
     .glassform {
@@ -513,7 +503,6 @@
       margin: auto;
       min-height: 100vh;
       padding: 20px;
-      margin-top: -70px !important;
       margin-bottom: 80px !important;
     }
 
@@ -546,6 +535,7 @@
       color: white;
       font-family: "Handlee", cursive;
       margin-bottom: 20px;
+      margin-top: 10px !important;
       font-weight: 700;
     }
 
@@ -606,6 +596,7 @@
         justify-content: center;
         padding: 40px;
         z-index: 2;
+        margin-top: -25px !important;
       }
 
      .glassform {
@@ -748,8 +739,7 @@
       margin: auto;
       min-height: 100vh;
       padding: 20px;
-      margin-top: -70px !important;
-      margin-bottom: 80px !important;
+      margin-bottom: -10px !important;
     }
 
     .contactcard {
@@ -781,6 +771,7 @@
       color: white;
       font-family: "Handlee", cursive;
       margin-bottom: 20px;
+      margin-top: 10px !important;
       font-weight: 700;
     }
 
@@ -799,6 +790,7 @@
       font-family: "Open Sans", sans-serif;
       margin-bottom: 35px !important;
       width: 60%;
+      margin-top: -15px !important;
       margin: auto;
     }
 
@@ -841,6 +833,7 @@
         align-items: center;
         justify-content: center;
         padding: 40px;
+        margin-top: -25px !important;
         z-index: 2;
       }
 
@@ -984,7 +977,6 @@
       margin: auto;
       min-height: 100vh;
       padding: 20px;
-      margin-top: -70px !important;
       margin-bottom: -10px !important;
     }
 
@@ -1017,6 +1009,7 @@
       color: white;
       font-family: "Handlee", cursive;
       margin-bottom: 20px;
+      margin-top: -5px !important;
       font-weight: 700;
     }
 
@@ -1035,6 +1028,7 @@
       font-family: "Open Sans", sans-serif;
       margin-bottom: 35px !important;
       width: 60%;
+      margin-top: -15px !important;
       margin: auto;
     }
 
@@ -1077,6 +1071,7 @@
         align-items: center;
         justify-content: center;
         padding: 40px;
+        margin-top: -25px !important;
         z-index: 2;
       }
 
@@ -1220,7 +1215,6 @@
       margin: auto;
       min-height: 100vh;
       padding: 20px;
-      margin-top: -70px !important;
       margin-bottom: -10px !important;
     }
 
