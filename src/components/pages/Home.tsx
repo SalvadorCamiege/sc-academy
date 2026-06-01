@@ -417,17 +417,6 @@ useEffect(() => {
                      </div>
          
                      <div className={styles.inputgroup}>
-                       <label>E-mail</label>
-                       <input
-                         type="email"
-                         name="email"
-                         placeholder="Insira seu email"
-                         value={formData.email}
-                         onChange={handleChange}
-                       />
-                       {errors.email && <span className={styles.error}>{errors.email}</span>}
-                     </div>
-                     <div className={styles.inputgroup}>
                        <label>Telefone / WhatsApp</label>
                        <input
                          type="text"
@@ -451,31 +440,6 @@ useEffect(() => {
                          <option value="react">React</option>
                        </select>
                        {errors.curso && <span className={styles.error}>{errors.curso}</span>}
-                     </div>
-                     <div className={styles.inputgroup}>
-                       <label>Nível</label>
-                       <select
-                         name="nivel"
-                         value={formData.nivel}
-                         onChange={handleChange}
-                       >
-                         <option value="">Selecione o nível</option>
-                         <option value="iniciante">Iniciante</option>
-                         <option value="basico">Básico</option>
-                         <option value="avancado">Avançado</option>
-                       </select>
-                       {errors.nivel && <span className={styles.error}>{errors.nivel}</span>}
-                     </div>
-                     <div className={styles.inputgroup}>
-                       <label>Escola</label>
-                       <input
-                         type="text"
-                         name="escola"
-                         placeholder="Nome da sua escola"
-                         value={formData.escola}
-                         onChange={handleChange}
-                       />
-                       {errors.escola && <span className={styles.error}>{errors.escola}</span>}
                      </div>
          
                      <div className={styles.inputgroup}>

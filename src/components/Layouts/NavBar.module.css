@@ -21,10 +21,12 @@
     max-width: 1200px;
 }
 
-.logo img {
-    height: 100px;
-    font-family: "Open Sans", sans-serif;
-    width: 100%;
+.logoPlaceholder span {
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold;
+  font-size: 32px;
+  color: white;
+  margin-bottom: 50px;
 }
 
 .list {
@@ -133,10 +135,12 @@
         max-width: 1200px;
     }
 
-    .logo img {
-        height: 90px;
+    .logoPlaceholder span {
         font-family: "Open Sans", sans-serif;
-        width: 90%;
+        font-weight: bold;
+        font-size: 18px;
+        color: white;
+        margin-bottom: 50px;
     }
 
     .list {
@@ -389,10 +393,12 @@
         max-width: 1200px;
     }
 
-    .logo img {
-        height: 100px;
+     .logoPlaceholder span {
         font-family: "Open Sans", sans-serif;
-        width: 100%;
+        font-weight: bold;
+        font-size: 20px;
+        color: white;
+        margin-bottom: 50px;
     }
         
     .menuToggle {
@@ -450,10 +456,12 @@
         max-width: 1200px;
     }
 
-    .logo img {
-        height: 100px;
+     .logoPlaceholder span {
         font-family: "Open Sans", sans-serif;
-        width: 100% !important
+        font-weight: bold;
+        font-size: 18px;
+        color: white;
+        margin-bottom: 50px;
     }
     
     .menuToggle {

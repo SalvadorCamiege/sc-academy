@@ -23,8 +23,9 @@
 }
 
 .logoPlaceholder h1 {
-  font-family: "Handlee", cursive;
+  font-family: "Open Sans", sans-serif;
   font-size: 25px;
+  font-weight: bold;
   color: white;
   margin-bottom: 50px;
 }

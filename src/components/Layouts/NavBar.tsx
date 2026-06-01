@@ -3,17 +3,18 @@ import { Link } from 'react-router-dom';
 import { FaWhatsapp } from "react-icons/fa";
 import styles from './NavBar.module.css';
 import Container from './Container';
-import logo from '../../assets/logo/logo.png';
 
 function NavBar() {
     const [menuOpen, setMenuOpen] = useState(false);
     return (
         <nav className={styles.NavBar}>
             <Container>
-                <Link to="/" className={styles.logo}>
-                    <img src={logo} alt="SC Academy" />
-                </Link>
-
+                <div className={styles.logoPlaceholder}>
+                    <span>
+                          Sc Academy
+                    </span>
+                </div>
+               
                 <div
                     className={styles.menuToggle}
                     onClick={() => setMenuOpen(!menuOpen)}
